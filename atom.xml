@@ -46,9 +46,9 @@
     <link href="https://l-lllll-06.github.io/project/2024/12/14/test/"/>
     <id>https://l-lllll-06.github.io/project/2024/12/14/test/</id>
     <published>2024-12-14T12:23:23.000Z</published>
-    <updated>2024-12-15T10:11:51.517Z</updated>
+    <updated>2024-12-15T10:21:16.653Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="introduction">Introduction</h1><p>This is a test article for blog.</p><p>这是一篇blog的测试文章。</p><p>Ceci est un article de test pour un blog.</p><h2 id="figure">Figure</h2><h2 id="equation">Equation</h2><p>The equation: <span class="math display">\[\int_\Omega\mathrm{d}\omega=\int_{\partial \Omega}\omega\]</span></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="introduction">Introduction</h1><p>This is a test article for blog.</p><p>这是一篇blog的测试文章。</p><p>Ceci est un article de test pour un blog.</p><h2 id="figure">Figure</h2><p><img src="/project/project/2024/12/14/test/cat.png"></p><h2 id="equation">Equation</h2><p>The equation: <span class="math display">\[\int_\Omega\mathrm{d}\omega=\int_{\partial \Omega}\omega\]</span></p>]]></content>
     
     
       
