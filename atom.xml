@@ -46,17 +46,14 @@
     <link href="https://l-lllll-06.github.io/project/2024/12/14/test/"/>
     <id>https://l-lllll-06.github.io/project/2024/12/14/test/</id>
     <published>2024-12-14T12:23:23.000Z</published>
-    <updated>2024-12-15T11:07:14.808Z</updated>
+    <updated>2024-12-15T11:34:59.084Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="introduction">Introduction</h1><p>This is a test article for blog.</p><p>这是一篇blog的测试文章。</p><p>Ceci est un article de test pour un blog.</p><h2 id="figure">Figure</h2><p><img src="/project/project/2024/12/14/test/test/cat.png"></p><h2 id="equation">Equation</h2><p>The equation: <span class="math display">\[\int_\Omega\mathrm{d}\omega=\int_{\partial \Omega}\omega\]</span></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This is a test article for blog.</p><p>这是一篇blog的测试文章。</p><p>Ceci est un article de test pour un blog.</p><h2 id="Figure"><a href="#Figure" class="headerlink" title="Figure"></a>Figure</h2><p><img src="/project/cat.png"></p><h2 id="Equation"><a href="#Equation" class="headerlink" title="Equation"></a>Equation</h2><p>The equation:<br>$$ \int_\Omega\mathrm{d}\omega&#x3D;\int_{\partial \Omega}\omega$$</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;This is a test article for blog.&lt;/p&gt;
-&lt;p&gt;这是一篇blog的测试文章。&lt;/p&gt;
-&lt;p&gt;Ceci est un article de test pour</summary>
+    <summary type="html">&lt;h1 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h1&gt;&lt;p&gt;This is a test article for blo</summary>
       
     
     

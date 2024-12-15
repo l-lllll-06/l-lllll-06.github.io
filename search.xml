@@ -29,7 +29,7 @@
       <link href="/project/2024/12/14/test/"/>
       <url>/project/2024/12/14/test/</url>
       
-        <content type="html"><![CDATA[<h1 id="introduction">Introduction</h1><p>This is a test article for blog.</p><p>这是一篇blog的测试文章。</p><p>Ceci est un article de test pour un blog.</p><h2 id="figure">Figure</h2><p><img src="/project/project/2024/12/14/test/test/cat.png"></p><h2 id="equation">Equation</h2><p>The equation: <span class="math display">\[\int_\Omega\mathrm{d}\omega=\int_{\partial \Omega}\omega\]</span></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This is a test article for blog.</p><p>这是一篇blog的测试文章。</p><p>Ceci est un article de test pour un blog.</p><h2 id="Figure"><a href="#Figure" class="headerlink" title="Figure"></a>Figure</h2><p><img src="/project/cat.png"></p><h2 id="Equation"><a href="#Equation" class="headerlink" title="Equation"></a>Equation</h2><p>The equation:<br>$$ \int_\Omega\mathrm{d}\omega&#x3D;\int_{\partial \Omega}\omega$$</p>]]></content>
       
       
       
