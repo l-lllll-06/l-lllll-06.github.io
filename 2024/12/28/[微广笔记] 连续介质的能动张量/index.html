@@ -22,7 +22,7 @@
     <meta name="description" content="连续介质的能动张量 ​ 上一篇我们讨论的对象都是质点。对于它们，利用世界线，再加上我们新了解的四维物理量便能很清晰地描述。然而一些问题中的研究对象不能够当作质点，这给我们造成了极大的困难，本篇主要讨论解决的方案。讨论连续分布的介质时，我们通常关注整体平均效应而不是个别的粒子。这自然让我们想到空间中每点的能量、动量密度，能流、动量流密度等物理量。 能动张量 ​ 将这些物理量整合起来变为一个\">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[微广笔记] 连续介质的能动张量">
-<meta property="og:url" content="https://l-lllll-06.github.io/projects/2024/12/28/[%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0]%20%E8%BF%9E%E7%BB%AD%E4%BB%8B%E8%B4%A8%E7%9A%84%E8%83%BD%E5%8A%A8%E5%BC%A0%E9%87%8F/index.html">
+<meta property="og:url" content="https://l-lllll-06.github.io/2024/12/28/[%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0]%20%E8%BF%9E%E7%BB%AD%E4%BB%8B%E8%B4%A8%E7%9A%84%E8%83%BD%E5%8A%A8%E5%BC%A0%E9%87%8F/index.html">
 <meta property="og:site_name" content="-L_LLLLL-">
 <meta property="og:description" content="连续介质的能动张量 ​ 上一篇我们讨论的对象都是质点。对于它们，利用世界线，再加上我们新了解的四维物理量便能很清晰地描述。然而一些问题中的研究对象不能够当作质点，这给我们造成了极大的困难，本篇主要讨论解决的方案。讨论连续分布的介质时，我们通常关注整体平均效应而不是个别的粒子。这自然让我们想到空间中每点的能量、动量密度，能流、动量流密度等物理量。 能动张量 ​ 将这些物理量整合起来变为一个\">
 <meta property="og:locale" content="en_US">
@@ -60,29 +60,29 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
-<link  rel="stylesheet" href="/projects/css/main.css" />
+<link  rel="stylesheet" href="/css/main.css" />
 
 
 
 
   
-<link rel="stylesheet" href="/projects/css/indeximg-hover.css">
-<link rel="stylesheet" href="/projects/css/cloudedGlass.css">
+<link rel="stylesheet" href="/css/indeximg-hover.css">
+<link rel="stylesheet" href="/css/cloudedGlass.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"l-lllll-06.github.io","root":"/projects/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/projects/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"l-lllll-06.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/projects/js/utils.js" ></script>
-  <script  src="/projects/js/color-schema.js" ></script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
   
 
 
@@ -99,7 +99,7 @@
 <div class="header-inner" style="height: 120vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/projects/">
+    <a class="navbar-brand" href="/">
       <strong>-L_LLLLL-</strong>
     </a>
 
@@ -118,7 +118,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/projects/" target="_self">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>Home</span>
               </a>
@@ -130,7 +130,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/projects/archives/" target="_self">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>Archives</span>
               </a>
@@ -142,7 +142,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/projects/categories/" target="_self">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>Categories</span>
               </a>
@@ -154,7 +154,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/projects/tags/" target="_self">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>Tags</span>
               </a>
@@ -166,7 +166,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/projects/about/" target="_self">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>About</span>
               </a>
@@ -330,7 +330,7 @@ class="math inline">\(ij\)</span>分量。</p></li>
     
       <span class="category-chain">
         
-  <a href="/projects/categories/%E7%89%A9%E7%90%86/" class="category-chain-item">物理</a>
+  <a href="/categories/%E7%89%A9%E7%90%86/" class="category-chain-item">物理</a>
   
   
 
@@ -345,7 +345,7 @@ class="math inline">\(ij\)</span>分量。</p></li>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/projects/tags/%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0/" class="print-no-link">#微广笔记</a>
+        <a href="/tags/%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0/" class="print-no-link">#微广笔记</a>
       
     </div>
   
@@ -358,7 +358,7 @@ class="math inline">\(ij\)</span>分量。</p></li>
   <div class="license-box my-3">
     <div class="license-title">
       <div>[微广笔记] 连续介质的能动张量</div>
-      <div>https://l-lllll-06.github.io/projects/2024/12/28/[微广笔记] 连续介质的能动张量/</div>
+      <div>https://l-lllll-06.github.io/2024/12/28/[微广笔记] 连续介质的能动张量/</div>
     </div>
     <div class="license-meta">
       
@@ -406,7 +406,7 @@ class="math inline">\(ij\)</span>分量。</p></li>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/projects/2024/12/27/%5B%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0%5D%20SR%E4%B8%AD%E7%9A%84%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6/" title="[微广笔记] SR中的质点动力学">
+                      <a href="/2024/12/27/%5B%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0%5D%20SR%E4%B8%AD%E7%9A%84%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6/" title="[微广笔记] SR中的质点动力学">
                         <span class="hidden-mobile">[微广笔记] SR中的质点动力学</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -534,8 +534,8 @@ class="math inline">\(ij\)</span>分量。</p></li>
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/projects/js/events.js" ></script>
-<script  src="/projects/js/plugins.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -557,7 +557,7 @@ class="math inline">\(ij\)</span>分量。</p></li>
 
 
   
-    <script  src="/projects/js/img-lazyload.js" ></script>
+    <script  src="/js/img-lazyload.js" ></script>
   
 
 
@@ -699,7 +699,7 @@ class="math inline">\(ij\)</span>分量。</p></li>
 
   <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
-  <script  src="/projects/js/local-search.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -707,7 +707,7 @@ class="math inline">\(ij\)</span>分量。</p></li>
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/projects/js/boot.js" ></script>
+<script  src="/js/boot.js" ></script>
 
 
   
@@ -715,5 +715,5 @@ class="math inline">\(ij\)</span>分量。</p></li>
   <noscript>
     <div class="noscript-warning">Blog works best with JavaScript enabled</div>
   </noscript>
-<!-- hexo injector body_end start --><script src="/projects/js/backgroundize.js"></script><!-- hexo injector body_end end --></body>
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script><!-- hexo injector body_end end --></body>
 </html>
