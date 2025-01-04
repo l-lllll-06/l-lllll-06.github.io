@@ -1,0 +1,978 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="https://l-lllll-06.github.io/picx-images-hosting/cat.7w6vn0f2xw.jpg">
+  <link rel="icon" href="https://l-lllll-06.github.io/picx-images-hosting/cat.7w6vn0f2xw.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="-L_LLLLL-">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="SR中的质点动力学 物理量的修改 ​ 既然在闵氏空间中出现了如之前讨论到的钟慢尺缩、双生子、车库佯谬这么多反常识的现象，那么我们不禁要问，我们所认知中的物理学定律是否也应该发生某些改变？ 为什么需要修改 ​ 首先考虑两个参考系\(\mathscr{R}\)和\(\mathscr{R}&#39;\)中的质点完全非弹性碰撞问题。其中\(\mathscr{R}&#39;\)正以速度\(v\)运">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[微广笔记] SR中的质点动力学">
+<meta property="og:url" content="https://l-lllll-06.github.io/projects/2024/12/27/[%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0]%20SR%E4%B8%AD%E7%9A%84%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6/index.html">
+<meta property="og:site_name" content="-L_LLLLL-">
+<meta property="og:description" content="SR中的质点动力学 物理量的修改 ​ 既然在闵氏空间中出现了如之前讨论到的钟慢尺缩、双生子、车库佯谬这么多反常识的现象，那么我们不禁要问，我们所认知中的物理学定律是否也应该发生某些改变？ 为什么需要修改 ​ 首先考虑两个参考系\(\mathscr{R}\)和\(\mathscr{R}&#39;\)中的质点完全非弹性碰撞问题。其中\(\mathscr{R}&#39;\)正以速度\(v\)运">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_0534.2rv7cx1a9y.jpeg">
+<meta property="article:published_time" content="2024-12-27T09:38:00.000Z">
+<meta property="article:modified_time" content="2024-12-28T12:28:43.297Z">
+<meta property="article:author" content="-L_LLLLL-">
+<meta property="article:tag" content="微广笔记">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_0534.2rv7cx1a9y.jpeg">
+  
+  
+  
+  <title>[微广笔记] SR中的质点动力学 - -L_LLLLL-</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/projects/css/main.css" />
+
+
+
+
+  
+<link rel="stylesheet" href="/projects/css/indeximg-hover.css">
+<link rel="stylesheet" href="/projects/css/cloudedGlass.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"l-lllll-06.github.io","root":"/projects/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/projects/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/projects/js/utils.js" ></script>
+  <script  src="/projects/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 120vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/projects/">
+      <strong>-L_LLLLL-</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/projects/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/projects/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/projects/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/projects/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/projects/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_0534.2rv7cx1a9y.jpeg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="[微广笔记] SR中的质点动力学"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        -L_LLLLL-
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-12-27 17:38" pubdate>
+          December 27, 2024 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.8k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          32 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">[微广笔记] SR中的质点动力学</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="sr中的质点动力学">SR中的质点动力学</h1>
+<h2 id="物理量的修改">物理量的修改</h2>
+<p>​
+既然在闵氏空间中出现了如之前讨论到的钟慢尺缩、双生子、车库佯谬这么多反常识的现象，那么我们不禁要问，我们所认知中的物理学定律是否也应该发生某些改变？</p>
+<h3 id="为什么需要修改">为什么需要修改</h3>
+<p>​ 首先考虑两个参考系<span
+class="math inline">\(\mathscr{R}\)</span>和<span
+class="math inline">\(\mathscr{R}&#39;\)</span>中的质点完全非弹性碰撞问题。其中<span
+class="math inline">\(\mathscr{R}&#39;\)</span>正以速度<span
+class="math inline">\(v\)</span>运动，其方向和大小与其中一个质点相同。在<span
+class="math inline">\(\mathscr{R}\)</span>系中，两个质点碰撞前的速率均为<span
+class="math inline">\(v\)</span>，它们碰撞后静止，总动量在碰撞前后没有变化。现在在<span
+class="math inline">\(\mathscr{R}’\)</span>系中看，碰撞前其中一个质点速率为<span
+class="math inline">\(2v\)</span>，另一个则静止不动。碰撞之后，两个质点一同以速率<span
+class="math inline">\(v\)</span>运动，动量也自然守恒。</p>
+<blockquote>
+<p>在伽利略变换下这些都是非常平凡的结论，我们在刚上中学的时候就已经有所了解。</p>
+</blockquote>
+<p>但是考虑洛伦兹变换，上面的结论就要出事了。在<span
+class="math inline">\(\mathscr{R}&#39;\)</span>中，考虑到速度变换公式
+<span class="math display">\[
+u=\frac{v+v}{1+\frac{v^2}{c^2}}=\frac{2v}{1+\frac{v^2}{c^2}}
+\]</span> 假设两个质点质量均为<span
+class="math inline">\(m\)</span>，则碰撞之前的总动量为 <span
+class="math display">\[
+\frac{2mv}{1+\frac{v^2}{c^2}}
+\]</span> 碰撞之后则是<span
+class="math inline">\(2mv\)</span>。显然碰撞前后的动量并不相等，因此我们可以从这个例子中看出在SR的场景下动量在某些惯性参考系下不守恒，因此动量不具备<strong>洛伦兹协变性</strong>。</p>
+<blockquote>
+<p>洛伦兹协变性指的是物理定律在洛伦兹变换下保持形式不变的性质。</p>
+</blockquote>
+<p>鉴于动量守恒定律对于物理学的深刻意义，我们考虑修改动量的定义，让守恒定律满足协变性。</p>
+<h3 id="修改的手段">修改的手段</h3>
+<p>​
+那么如何下手修改动量的定义呢？我们先做一个思想实验：在传统的观念中，只要我们给物体施加一个恒力，它的速度将会越来越大。然而现在我们已经假设了光速是速度的上限，就应当限制物体无限制地加速。只需要物体在加速的过程中质量不断增大，其加速度也必然会相应地减少，这就能够限制物体的速度。这听上去十分荒谬，物体的质量怎么会自发地增加？然而这一个猜测已经被实验所证实，我们可以暂时先把常识抛在一边，放心大胆地使用这个结论。假设静止的物体质量为<span
+class="math inline">\(m_0\)</span>，以速度为<span
+class="math inline">\(u\)</span>运动的物体质量为<span
+class="math inline">\(m_u\)</span>，为了保证新动量守恒，下面的等式自然成立
+<span class="math display">\[
+\frac{2m_uv}{1+\frac{v^2}{c^2}}=(m_0+m_u)v
+\]</span> 这给出 <span class="math display">\[
+m_u=\gamma_um_0
+\]</span>
+按照新质量定义出的新动量，在洛伦兹变换的框架下也能给出动量守恒律。自然地，可以利用新的动量来定义新体系下的力，也就是新动量对时间的导数。</p>
+<p>​
+经典力学中还有一个非常重要的守恒量，也就是能量。考虑动能的变化率，它应该等于力和速度的点积
+<span class="math display">\[
+\dot{E_k}=\vec{f}\cdot\vec{u}=\vec{u}\cdot\frac{\mathrm{d}(m_u\vec{u})}{\mathrm{d}t}=m_u\vec{u}\cdot\dot{\vec{u}}+\vec{u}\cdot\vec{u}\dot{m_u}=m_uu\dot{u}+u^2\dot{m_u}
+\]</span> 其中<span
+class="math inline">\(\dot{m_u}\)</span>可以利用上文得出的<span
+class="math inline">\(m_u=\gamma_um_0\)</span>得出 <span
+class="math display">\[
+\dot{m_u}=\frac{\mathrm{d}}{\mathrm{d}t}(\frac{cm_0}{\sqrt{c^2-u^2}})=\frac{m_uu}{c^2-u^2}\dot{u}
+\]</span> 代入到<span class="math inline">\(\dot{E_k}\)</span>的表达式得
+<span class="math display">\[
+\dot{E_k}=c^2\dot{m_u}
+\]</span>
+想要找到动能的表达式，只需要对上式两边积分，并注意初始条件当<span
+class="math inline">\(u=0\)</span>时<span
+class="math inline">\(m_u=m_0\)</span>和<span
+class="math inline">\(E_k=0\)</span> <span class="math display">\[
+E_k=m_uc^2-m_0c^2
+\]</span> 这便是著名的质能方程。</p>
+<blockquote>
+<p>几年前感到非常奇妙且不可思议的的公式居然只是这么平凡的结论。。。</p>
+</blockquote>
+<p>按照现有的讨论，我们很容易可以得到在SR框架下的物理量 <span
+class="math display">\[
+\begin{gathered}
+\vec{a}=\frac{\mathrm{d}\vec{u}}{\mathrm{d}t}\\
+\vec{p}=\gamma m\vec{u}\\
+\vec{f}=\frac{\mathrm{d}\vec{p}}{\mathrm{d}t}\\
+E=\gamma mc^2
+\end{gathered}
+\]</span>
+到了这里基本上就万事大吉了，我们惊喜地发现在进行了些许修改之后，各种原先的物理定律都得到了较好的保留，其中很多量的形式甚至没有什么改变。</p>
+<h3 id="修改的缺陷">修改的缺陷</h3>
+<p>​
+原则上我们已经可以讨论许多问题，不需要进一步深入了。欣喜过后，当我们将这些新的物理量定义再次摆到自己面前，就会发现不幸的事情——这些物理量<strong>全部</strong>都依赖于参考系的选择。每当我们讨论问题的时候都会局限于坐标系之间的变换关系，处理问题的过程非常繁琐。最重要的是，物理量的本质并没有被很好地揭露，我们在不同的参考系下看到的样子都是不同的，就好似盲人摸象，我们始终无法看清楚这些表象所共同指向的全局的、绝对的东西。</p>
+<h2 id="不变的全局量">不变的全局量</h2>
+<p>​
+之前我们简略地了解过四维语言，并用画图的方式成功解释了一些佯谬。以尺缩效应为例，虽然尺子只有一把，但是不同的惯性参考系的同时面不同，导致它们测量了不同的一维尺子。两个参考系都只看到了尺子世界面的一个截面，得出不同的长度也就不足为奇了。</p>
+<blockquote>
+<p>各个参考系看到的是世界面的截面，这是相对的。而世界面本身却是绝对的。</p>
+</blockquote>
+<p>按照这个指导思想，我们也许就能够找到藏在现有物理量背后的绝对量。</p>
+<blockquote>
+<p>为了方便，接下来使用几何单位制，也就是令<span
+class="math inline">\(c=1\)</span>。</p>
+</blockquote>
+<h3 id="速">4速</h3>
+<p>​ <strong>定义1</strong>
+质点的<strong>4速</strong>是质点世界线的切向量，它以质点的固有时作为参数，记为<span
+class="math inline">\(U^a=(\frac{\partial}{\partial\tau})^a\)</span>。</p>
+<blockquote>
+<p>这个定义还是蛮自然的，因为经典的情况下速度是质点轨迹的切向量。</p>
+</blockquote>
+<p><span
+class="math inline">\(U^a\)</span>有单位长，仅需计算闵氏度量下4速和自己的内积即可证明
+<span class="math display">\[
+U^aU_a=\eta_{ab}U^bU_a=\eta_{00}=-1\\ \hspace{15cm}\boxed{}
+\]</span> 现在为了观测质点的运动而选择一个参考系<span
+class="math inline">\(\mathscr{R}\)</span>。记质点的世界线为<span
+class="math inline">\(L(\tau)\)</span>。由于给定了参考系，<span
+class="math inline">\(L\)</span>上的任意一点都存在一个观者的世界线也经过这点，该世界线记为<span
+class="math inline">\(G\)</span>。</p>
+<figure>
+<img
+src="https://l-lllll-06.github.io/picx-images-hosting/article/IMG_1159.7zqhxnbws1.jpeg" srcset="/projects/img/loading.gif" lazyload
+alt="微广原图" />
+<figcaption aria-hidden="true">微广原图</figcaption>
+</figure>
+<p>如图所示，设<span class="math inline">\(Z^a\)</span>和<span
+class="math inline">\(U^a\)</span>分别是G和<span
+class="math inline">\(L(\tau)\)</span>在<span
+class="math inline">\(p\)</span>点的4速。选择<span
+class="math inline">\(G\)</span>所在的坐标系<span
+class="math inline">\((t,x^i)\)</span>，则 <span class="math display">\[
+U^a=(\frac{\partial}{\partial\tau})^a=(\frac{\partial}{\partial
+t})^a\frac{\mathrm{d}t}{\mathrm{d}\tau}
++(\frac{\partial}{\partial x^i})^a\frac{\mathrm{d}x^i}{\mathrm{d}\tau}
+\]</span> 可以写为微分式 <span class="math display">\[
+U^a\mathrm{d}\tau=(\frac{\partial}{\partial
+t})^a\mathrm{d}t+(\frac{\partial}{\partial x^i})^a\mathrm{d}x^i
+\]</span> 从中可以看出空间位移是<span
+class="math inline">\((\frac{\partial}{\partial
+x^i})^a\mathrm{d}x^i\)</span>，自然可以得出质点的3速 <span
+class="math display">\[
+u^a=(\frac{\partial}{\partial
+x^i})^a\frac{\mathrm{d}x^i}{\mathrm{d}t}=(\frac{\partial}{\partial
+x^i})^a\frac{\mathrm{d}x^i/\mathrm{d}\tau}{\mathrm{d}t/\mathrm{d\tau}}
+\]</span> 注意到<span class="math inline">\((\frac{\partial}{\partial
+x^i})^a\frac{\mathrm{d}x^i}{\mathrm{d}\tau}\)</span>是<span
+class="math inline">\(U^a\)</span>投影到空间分量，也就是<span
+class="math inline">\({h^a}_bU^b\)</span>，且<span
+class="math inline">\(\frac{\mathrm{d}t}{\mathrm{d}\tau}=\gamma=-U^aZ_a\)</span>，得
+<span class="math display">\[
+-U^aZ_au^a={h^a}_bU^b
+\]</span></p>
+<blockquote>
+<p><span class="math inline">\({h^a}_b=\eta^{ac}h_{cb}={\delta^a}_b\mp
+n^an_b\)</span>。其中<span
+class="math inline">\(h_{cb}\)</span>是由<span
+class="math inline">\(\eta_{ab}\)</span>给出的<span
+class="math inline">\(p\)</span>点切空间的三维子空间的诱导度量<span
+class="math inline">\(n^a\)</span>为子空间的法向量，它们可以给出投影映射<span
+class="math inline">\({h^a}_b\)</span>。</p>
+<p><span
+class="math inline">\(\frac{\mathrm{d}t}{\mathrm{d}\tau}=\gamma\)</span>可以由洛伦兹变换的定义直接给出，重点是证明<span
+class="math inline">\(\gamma=-U^aZ_a\)</span>。 <span
+class="math display">\[
+\gamma=U^0=-\eta_{00}U^0(\frac{\partial}{\partial
+t})^0=-\eta_{\mu\nu}U^\mu(\frac{\partial}{\partial
+t})^\nu=-\eta_{ab}U^aZ^b=-U^aZ_a\\ \hspace{15cm}\boxed{}
+\]</span></p>
+</blockquote>
+<p>假如瞬时观者<span
+class="math inline">\((p,Z^a)\)</span>刚好和被观测的质点的世界线相切，则称它为该质点的<strong>瞬时静止观者</strong>。由点和观者的4速给出的测地线是称为质点在<span
+class="math inline">\(p\)</span>时刻的<strong>瞬时静止惯性观者</strong>。借用瞬时观者<span
+class="math inline">\((p,Z^a)\)</span>可以分解质点的4速 <span
+class="math display">\[
+\gamma u^a={h^a}_bU^b=({\delta^a}_b+Z^aZ_b)U^b=U^a-\gamma Z^a\\
+U^a=\gamma(Z^a+u^a)
+\]</span>
+这就将质点的4速分解成了空间分量和时间分量。可以看到，通过分解的4速展现出了非常清晰的物理意义。这里需要明确的是，只有给定了瞬时观者之后，质点的4速分解才能够进行。4速本身是<strong>绝对的</strong>，但是分量却是<strong>相对的</strong>，因为它依赖于给定的惯性观者。惯性观者给出了一个时间分解方向（观者的4速方向），我们可以找到与观者4速正交的三维空间，这就是3速的舞台。</p>
+<blockquote>
+<p>还是那句话，4速本身是绝对的，因为它的定义仅依赖于质点的世界线，和参考系的选择完全没有关系。当我们选定了一个惯性观者用于分解4速，实际上就是给定了一个坐标系进行分解。而坐标系的选择是多样的，分解出的时间分量和3速也自然随着参考系的改变而改变。</p>
+</blockquote>
+<h3 id="动量">4动量</h3>
+<p>​
+有了“速度”，自然就能联想到动量的定义，给出质点的<strong>4动量</strong>。</p>
+<p>​ <strong>定义2</strong> 设质点的静质量为<span
+class="math inline">\(m\)</span>，4速为<span
+class="math inline">\(U^a\)</span>，则其<strong>4动量</strong>记为<span
+class="math inline">\(P^a\)</span>，定义为<span
+class="math inline">\(P^a =mU^a\)</span>。</p>
+<blockquote>
+<p>尽管之前已经提到过，但还是需要强调：<span
+class="math inline">\(m\)</span>就是前文讨论的<span
+class="math inline">\(m_0\)</span>（静质量），它是质点所在坐标系眼中质点的质量，是一个绝对量，也称为质点的<strong>内禀质量</strong>或<strong>固有质量</strong>。它不依赖于坐标系的选择。</p>
+<p>这个地方需要特别注意！！！</p>
+</blockquote>
+<p>倘若给定瞬时观者<span
+class="math inline">\((p,Z^a)\)</span>,可以仿照4速分解对4动量进行同样的操作
+<span class="math display">\[
+P^a=mU^a=m\gamma(Z^a+u^a)
+\]</span> 注意到在几何单位制下有<span
+class="math inline">\(E=m\gamma\)</span>，得 <span
+class="math display">\[
+P^a=EZ^a+p^a
+\]</span>
+我们发现4动量的分解比4速还要来得美妙<del>（仅个人意见）</del>，因为它十分自然地就将质点的能量和3动量统一了起来。按照原书的说法，这种统一是”有机的“，我们事先没有强行凑出这个形式，只是仿照动量的原本定义，与4速结合而来，它自然地就把两个不同的物理量结合起来了。</p>
+<blockquote>
+<p>原书中再次强调！！！4动量是绝对的，只是如何分解与选择的观者有关。如果没有观者，4动量仍然存在，但是能量和3动量将不再有任何意义。</p>
+</blockquote>
+<p>按照4动量分解的表达式,可以轻松得到著名公式 <span
+class="math display">\[
+\begin{cases}
+P^aP_a=-E^2+p^2\\
+P^aP_a=mU^amU_a=-m^2
+\end{cases}
+\]</span> 联立并按照量纲补齐<span class="math inline">\(c\)</span>，有
+<span class="math inline">\(E^2 =m^2 c^4 +p^2 c^2\)</span>。</p>
+<blockquote>
+<p>这一步是为了从几何单位制回退到国际单位制。</p>
+</blockquote>
+<h3 id="加速">4加速</h3>
+<p>​ <strong>定义3</strong> 设质点的4速为<span
+class="math inline">\(U^a\)</span>，则质点的4加速定义为<span
+class="math inline">\(A^a =U^b\partial_b U^a\)</span>。</p>
+<p>其中<span class="math inline">\(\partial_b\)</span>与<span
+class="math inline">\(\eta_{ab}\)</span>相适配，有<span
+class="math inline">\(\partial_a\eta_{bc}=0\)</span>。和4速、4动量一样，4加速也是绝对的。由定义可知，若<span
+class="math inline">\(A^a=0\)</span>，世界线为测地线，质点做惯性运动。和我们所熟知的加速度不一样，一旦给出4速，4加速一定和它正交。只需要计算4加速和4速的内积
+<span class="math display">\[
+A^aU_a=\eta_{ab}A^aU^b=\eta_{ab}(U^b\partial_bU^a)U^b=U_aU^b\partial_bU^a
+\]</span> 注意到<span
+class="math inline">\(U_a\partial_bU^a=\frac{1}{2}\partial_
+b(U^aU_a)=\frac{1}{2}\partial_ b(-1)=0\)</span>， <span
+class="math display">\[
+A^aU_a=\frac{1}{2}U^b\partial_b(U^aU_a)=0\\ \hspace{15cm}\boxed{}
+\]</span> 内积为0，这说明4加速与4速正交。</p>
+<p>​ <strong>定义4</strong> 设质点世界线<span
+class="math inline">\(L(\tau)\)</span>在惯性参考系<span
+class="math inline">\((t,x^i)\)</span>的参数表达式为<span
+class="math inline">\(t=t(\tau)\)</span>，<span
+class="math inline">\(x^i =x^i(\tau)\)</span>，则它相对于该系的3加速为
+<span class="math display">\[
+a^a=\frac{\mathrm{d}^2x^i(t)}{\mathrm{d}t^2}(\frac{\partial}{\partial
+x^i})^a
+\]</span></p>
+<blockquote>
+<p>可以发现一个比较微妙的点，我们没有分解4加速得到3加速，而是直接给出了它的定义。这是因为只有一个观者不足以决定质点的3加速。这需要比较两个位置的3速，而一般来说，观者不会同时经过这两个点。</p>
+</blockquote>
+<p>尽管3加速的导出过程没能如我们所愿，我们还是能够找到4加速和在惯性参考系<span
+class="math inline">\(\mathscr{R}\)</span>的3加速之间的关系。将<span
+class="math inline">\(A^a\)</span>展开到<span
+class="math inline">\(\mathscr{R}\)</span>的对偶坐标基底，考察其分量
+<span class="math display">\[
+A^\mu=A^a(\mathrm{d}x^\mu)_a=(\mathrm{d}x^\mu)_aU^b\partial_bU^a=U^b\partial_b[(\mathrm{d}x^\mu)_aU^a]=U^b\partial_bU^\mu=\frac{\mathrm{d}U^\mu}{\mathrm{d}\tau}=\gamma\frac{\mathrm{d}U^\mu}{\mathrm{d}t}
+\]</span> 结合3速的分解<span
+class="math inline">\(U^0=\gamma\)</span>,<span
+class="math inline">\(U^i=\gamma u^i\)</span>以及<span
+class="math inline">\(\gamma\)</span>的定义，得 <span
+class="math display">\[
+\begin{gathered}
+A^0=\gamma^4\vec{u}\cdot\vec{a}\\
+A^i=\gamma^2a^i+\gamma^4(\vec{u}\cdot\vec{a})u^i
+\end{gathered}
+\]</span> 可以发现分量之间有所联系。考虑<span
+class="math inline">\(\vec{u}=0\)</span>便可以看出，4加速等于和它相对于瞬时静止惯性坐标系的3加速。</p>
+<h3 id="力">4力</h3>
+<p>​ 现在有了加速度，自然联想到力。</p>
+<p>​ <strong>定义5</strong> 质点所受的<strong>4力</strong>定义为<span
+class="math inline">\(F^a= U^b\partial_b P^a\)</span>。</p>
+<p>这个定义仿照的是经典力学中牛顿第二定律基于动量的表述方法，比基于加速度的表述更加全面，因为它适应变质量的体系。</p>
+<blockquote>
+<p>注意到当<span
+class="math inline">\(\frac{\mathrm{d}m}{\mathrm{d}\tau}=0\)</span>时，直接带入4动量的定义即得<span
+class="math inline">\(F^a= mA^a\)</span>。</p>
+</blockquote>
+<p>同样选取惯性参考系<span
+class="math inline">\(\mathscr{R}\)</span>，将4力展开到对偶基上考察其分量。留意4动量的分解，有
+<span class="math display">\[
+\begin{gathered}
+F^0=U^b\partial_bP^0=U^b\partial_bE=\frac{\mathrm{d}E}{\mathrm{d}\tau}=\gamma\frac{\mathrm{d}E}{\mathrm{d}t}=\gamma\vec{f}\cdot\vec{u}\\
+F^i=U^b\partial_bp^i=\frac{\mathrm{d}p^i}{\mathrm{d}\tau}=\gamma f^i
+\end{gathered}
+\]</span></p>
+<h2 id="标架">标架</h2>
+<p>​
+之前我们认为惯性观者指的是一条类时线。然而这个说法并不准确，因为它无法衡量物体的“旋转“。完整的说法应当给类时线加上3标架，并对标架加以适当要求。</p>
+<p>​ <strong>定义6</strong>
+质点世界线上的<strong>3标架</strong>是世界线上的三个正交归一向量场，与观者的4速正交。</p>
+<p>3标架加上观者的4速自然就可以组合成4标架。一旦给定了一个参考系，全时空就有一个4标架场。</p>
+<blockquote>
+<p>其实就是在原本观者的基础上添加了空间基向量用于确保没有转动效应。</p>
+</blockquote>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/projects/categories/%E7%89%A9%E7%90%86/" class="category-chain-item">物理</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/projects/tags/%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0/" class="print-no-link">#微广笔记</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>[微广笔记] SR中的质点动力学</div>
+      <div>https://l-lllll-06.github.io/projects/2024/12/27/[微广笔记] SR中的质点动力学/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>-L_LLLLL-</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>December 27, 2024</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/projects/2024/12/28/%5B%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0%5D%20%E8%BF%9E%E7%BB%AD%E4%BB%8B%E8%B4%A8%E7%9A%84%E8%83%BD%E5%8A%A8%E5%BC%A0%E9%87%8F/" title="[微广笔记] 连续介质的能动张量">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">[微广笔记] 连续介质的能动张量</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/projects/2024/12/24/%5B%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0%5D%20SR%E4%B8%AD%E7%9A%84%E7%BB%8F%E5%85%B8%E4%BE%8B%E5%AD%90/" title="[微广笔记] SR中的经典例子">
+                        <span class="hidden-mobile">[微广笔记] SR中的经典例子</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/projects/js/events.js" ></script>
+<script  src="/projects/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/projects/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/projects/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/projects/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+<!-- hexo injector body_end start --><script src="/projects/js/backgroundize.js"></script><!-- hexo injector body_end end --></body>
+</html>
