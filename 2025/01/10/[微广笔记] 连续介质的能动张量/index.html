@@ -19,24 +19,24 @@
   <meta name="author" content="-L_LLLLL-">
   <meta name="keywords" content="">
   
-    <meta name="description" content="哈密顿力学的关键  主要参考了陈同的《经典力学新讲》，为确保自己的理解正确而写。  辛形式 ​ 相空间是哈密顿力学的舞台，她由\(n\)个坐标和\(n\)个动量张成，是一个\(2n\)维空间。取标准基\((\frac{\partial}{\partial p_\mu})^a\)以及\((\frac{\partial}{\partial q^\nu})^b\)，由其对偶基可以自然诱导出">
+    <meta name="description" content="连续介质的能动张量 ​ 上一篇我们讨论的对象都是质点。对于她们，利用世界线，再加上我们新了解的四维物理量便能很清晰地描述。然而一些问题中的研究对象不能够当作质点，这给我们造成了极大的困难，本篇主要讨论解决的方案。讨论连续分布的介质时，我们通常关注整体平均效应而不是个别的粒子。这自然让我们想到空间中每点的能量、动量密度，能流、动量流密度等物理量。 能动张量 ​ 将这些物理量整合起来变为一个\">
 <meta property="og:type" content="article">
-<meta property="og:title" content="哈密顿力学的关键">
-<meta property="og:url" content="https://l-lllll-06.github.io/2024/12/28/%E5%93%88%E5%AF%86%E9%A1%BF%E5%8A%9B%E5%AD%A6%E7%9A%84%E6%A0%B8%E5%BF%83/index.html">
+<meta property="og:title" content="[微广笔记] 连续介质的能动张量">
+<meta property="og:url" content="https://l-lllll-06.github.io/2025/01/10/[%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0]%20%E8%BF%9E%E7%BB%AD%E4%BB%8B%E8%B4%A8%E7%9A%84%E8%83%BD%E5%8A%A8%E5%BC%A0%E9%87%8F/index.html">
 <meta property="og:site_name" content="-L_LLLLL-">
-<meta property="og:description" content="哈密顿力学的关键  主要参考了陈同的《经典力学新讲》，为确保自己的理解正确而写。  辛形式 ​ 相空间是哈密顿力学的舞台，她由\(n\)个坐标和\(n\)个动量张成，是一个\(2n\)维空间。取标准基\((\frac{\partial}{\partial p_\mu})^a\)以及\((\frac{\partial}{\partial q^\nu})^b\)，由其对偶基可以自然诱导出">
+<meta property="og:description" content="连续介质的能动张量 ​ 上一篇我们讨论的对象都是质点。对于她们，利用世界线，再加上我们新了解的四维物理量便能很清晰地描述。然而一些问题中的研究对象不能够当作质点，这给我们造成了极大的困难，本篇主要讨论解决的方案。讨论连续分布的介质时，我们通常关注整体平均效应而不是个别的粒子。这自然让我们想到空间中每点的能量、动量密度，能流、动量流密度等物理量。 能动张量 ​ 将这些物理量整合起来变为一个\">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_1168.3yeiohwns1.jpeg">
-<meta property="article:published_time" content="2024-12-28T04:36:02.000Z">
-<meta property="article:modified_time" content="2025-01-11T14:31:26.550Z">
+<meta property="og:image" content="https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_0537.5c11riktgz.png">
+<meta property="article:published_time" content="2025-01-10T13:08:06.000Z">
+<meta property="article:modified_time" content="2025-01-11T14:44:55.316Z">
 <meta property="article:author" content="-L_LLLLL-">
-<meta property="article:tag" content="杂谈">
+<meta property="article:tag" content="微广笔记">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_1168.3yeiohwns1.jpeg">
+<meta name="twitter:image" content="https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_0537.5c11riktgz.png">
   
   
   
-  <title>哈密顿力学的关键 - -L_LLLLL-</title>
+  <title>[微广笔记] 连续介质的能动张量 - -L_LLLLL-</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,13 +196,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_1168.3yeiohwns1.jpeg') no-repeat center center; background-size: cover;">
+     style="background: url('https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_0537.5c11riktgz.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="哈密顿力学的关键"></span>
+            <span id="subtitle" data-typed-text="[微广笔记] 连续介质的能动张量"></span>
           
         </div>
 
@@ -218,8 +218,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-12-28 12:36" pubdate>
-          December 28, 2024 pm
+        <time datetime="2025-01-10 21:08" pubdate>
+          January 10, 2025 pm
         </time>
       </span>
     
@@ -230,7 +230,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k words
+          355 words
         
       </span>
     
@@ -241,7 +241,7 @@
         
         
         
-          14 mins
+          3 mins
         
       </span>
     
@@ -278,135 +278,36 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">哈密顿力学的关键</h1>
+            <h1 id="seo-header">[微广笔记] 连续介质的能动张量</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="哈密顿力学的关键">哈密顿力学的关键</h1>
-<blockquote>
-<p>主要参考了陈同的《经典力学新讲》，为确保自己的理解正确而写。</p>
-</blockquote>
-<h2 id="辛形式">辛形式</h2>
-<p>​ 相空间是哈密顿力学的舞台，她由<span
-class="math inline">\(n\)</span>个坐标和<span
-class="math inline">\(n\)</span>个动量张成，是一个<span
-class="math inline">\(2n\)</span>维空间。取标准基<span
-class="math inline">\((\frac{\partial}{\partial
-p_\mu})^a\)</span>以及<span
-class="math inline">\((\frac{\partial}{\partial
-q^\nu})^b\)</span>，由其对偶基可以自然诱导出相空间中的一个2-形式<span
-class="math inline">\(\omega_{ab}\)</span>，称为<strong>辛形式</strong>
-<span class="math display">\[
-\omega_{ab}=(\mathrm{d}p_\mu)_a \wedge(\mathrm{d}q^\mu)_b
-\]</span> 不难看出她有如下性质 <span class="math display">\[
-\begin{gathered}
-\omega_{ab}=-\omega_{ba}\\
-\mathrm{d}\omega_{ab}=0
-\end{gathered}
-\]</span></p>
-<blockquote>
-<p>第一条由楔积的性质直接给出，第二条则是因为<span
-class="math inline">\(\mathrm{d}^2=0\)</span>,而<span
-class="math inline">\(\omega_{ab}=\mathrm{d}\Theta_a=\mathrm{d}[p_\mu(\mathrm{d}q^\mu)_a]\)</span>，因此辛形式是闭形式。</p>
-</blockquote>
-<p><span
-class="math inline">\(\Theta_a\)</span>称为<strong>辛势</strong>，她的外微分是辛形式。</p>
-<h3 id="正则变换的保辛性">正则变换的“保辛”性</h3>
-<p>​ 考察另外一组正则坐标<span
-class="math inline">\((q&#39;^\mu,p&#39;_\nu)\)</span>，则按照定义得到新坐标下的辛势<span
-class="math inline">\(\Theta&#39;_a=p_\mu(\mathrm{d}q&#39;^\mu)_a\)</span>。为保证最小作用量原理在两组正则坐标下具有相同的描述，作用量之间只能相差常数，也就是说<span
-class="math inline">\(S&#39;=S+\int_0^t\mathrm{d}F\)</span>。若无含时情况，相差的量全部体现在辛势上，则必然有
-<span class="math display">\[
-\Theta&#39;_a=\Theta_a+\mathrm{d}F
-\]</span> 这当然意味着辛形式在坐标变换下保持不变，即 <span
-class="math display">\[
-\omega_{ab}=\mathrm{d}\Theta_a=\mathrm{d}\Theta&#39;_a=\omega&#39;_{ab}
-\]</span>
-这就是大名鼎鼎的正则变换，她保证辛形式是一个不变量。反过来想，一个坐标变换只要满足辛形式不变就是一个正则变换，可以作为正则变换的条件。这种类型的变换有很多好处，我们接下来就会看到。</p>
-<h3 id="动力学方程">动力学方程</h3>
-<p>​ 给定一个局部坐标<span
-class="math inline">\(x^\mu\)</span>（不一定是正则坐标），将辛氏展开<span
-class="math inline">\(\Theta_a=\Theta_\mu(\mathrm{d}x^\mu)_a\)</span>
-。最小作用量原理要求 <span class="math display">\[
-\delta\int_0^t\Theta_\mu(\mathrm{d}x^\mu)_a-\mathscr{H}\mathrm{d}t=0
-\]</span></p>
-<blockquote>
-<p>省略了<span class="math inline">\(\mathrm{d}t\)</span>的指标。</p>
-</blockquote>
-<p>也就是 <span class="math display">\[
-\begin{gathered}
-\int_0^t(\mathrm{d}x^\mu)_a(\delta\Theta_\nu)_b+\Theta_\mu(\mathrm{d}\delta
-x^\mu)_{ab}-\partial_\nu\mathscr{H}(\delta
-x^\nu)_b\mathrm{d}t\\=\Theta_\mu(\delta
-x^\mu)_a\big|_0^t+\int_0^t(\mathrm{d}x^\mu)_a(\delta\Theta_\nu)_b-(\mathrm{d}\Theta_\mu)_a(\delta
-x^\nu)_b-\partial_\nu\mathscr{H}(\delta x^\nu)_b\mathrm{d}t
-\end{gathered}
-\]</span> 由于边界的约束，第一项为0。剩下的部分 <span
-class="math display">\[
-\int_0^t(\omega_{\mu\nu}\dot{x}^\nu-\partial_\mu\mathscr{H})\delta
-x^\nu\mathrm{d}t=0
-\]</span> 其中<span
-class="math inline">\(\omega_{\mu\nu}=\partial_\mu\Theta_\nu-\partial_\nu\Theta_\mu\)</span>。根据各个<span
-class="math inline">\(\delta x^\nu\)</span>相互独立，自然得到<span
-class="math inline">\(\omega_{\mu\nu}\dot{x}^\nu=\partial_\mu\mathscr{H}\)</span>。由于哈密顿量可以完全决定相空间的演化，则必然存在<span
-class="math inline">\(\omega^{\mu\nu}\)</span>使得<span
-class="math inline">\(\omega^{\mu\nu}\omega_{\nu\sigma}={\delta^\mu}_\sigma\)</span>。通过这个逆，就能够给出运动方程
-<span class="math display">\[
-\dot{x}^\mu=\omega^{\mu\nu}\partial_\nu\mathscr{H}
-\]</span> 她依赖于当前的坐标系，这是因为辛矩阵<span
-class="math inline">\(\omega_{\mu\nu}\)</span>的形式依赖于坐标系的选择。不过一旦我们选定了正则坐标，运动方程的形式将不会改变。</p>
-<p>力学系统按照方程给出的演化就在相空间上划定了一些路径。由于动力学方程是唯一的（从上式中也得到了确认），这些路径永远不可能相交，她们都有自己的轨道。很容易想象力学演化过程就是相空间的流体流动过程，沿着流线，可以定义流速场
-<span class="math display">\[
-X^a=\dot{x}^\mu(\frac{\partial}{\partial x^\mu})^a
-\]</span>
-方向是流线的切向量。将其和辛形式缩并，并根据之前求出的动力学方程求得
-<span class="math display">\[
-X^b\omega_{ab}=\omega^{\mu\nu}\partial_\mu\mathscr{H}(\frac{\partial}{\partial
-x^\nu})^b\omega_{\mu\nu}(\mathrm{d}x^\mu)^a(\mathrm{d}x^\nu)^b=-\partial_\mu\mathscr{H}(\mathrm{d}x^\mu)^a=-(\mathrm{d}\mathscr{H})_a
-\]</span>
-我们的动力学方程在流速场的帮助下，完全摆脱了坐标系，成为了绝对的方程。</p>
-<blockquote>
-<p><span class="math inline">\(X^b\omega_{ab}\)</span>也叫<span
-class="math inline">\(X\)</span>与<span
-class="math inline">\(\omega\)</span>的内乘，有时记为<span
-class="math inline">\(\iota_X\omega\)</span>。</p>
-</blockquote>
-<p>哈密顿量沿着流线是守恒量，我们现在就来证明。 <span
-class="math display">\[
-\begin{gathered}
-X^a\nabla_a\mathscr{H}=X^a(\mathrm{d}\mathscr{H})_a=-X^aX^b\omega_{ab}=-\omega(X^a,X^b)\\
-\omega(X^a,X^b)=-\omega(X^b,X^a)\\
-X^a\nabla_a\mathscr{H}=0\\
-\hspace{15cm}\boxed{}
-\end{gathered}
-\]</span> 当然，上述推导成立的条件为<span
-class="math inline">\(\mathscr{H}\)</span>不显含时间，否则还会多出对时间的偏导数一项。</p>
-<p>仿照哈密顿向量场定义其他力学量的切向量场<span
-class="math inline">\(f^a\)</span>，<span
-class="math inline">\(g^b\)</span>，则辛形式能够诱导出泊松括号<span
-class="math inline">\([f^a,g^b]=\omega(f^a,g^b)\)</span>。对于某力学量，只需要在泊松括号中填入该力学量以及哈密顿量，就可以得到力学量的时间变化率。</p>
-<h2 id="动力学演化的保辛性">动力学演化的“保辛”性</h2>
-<p>​ 一旦给定了辛形式和哈密顿量，就能唯一确定哈密顿向量场<span
-class="math inline">\(X^a\)</span>，她可以给出一个单参微分同胚映射<span
-class="math inline">\(\phi_t\tau: x(0)\rightarrow
-x(\tau)\)</span>以及她的拉回、推前。考察辛形式在哈密顿向量场作用下的变化，由<span
-class="math inline">\(\phi_t\)</span>对辛形式的拉回<span
-class="math inline">\(\phi^*_\tau(\omega)\)</span>衡量 <span
-class="math display">\[
-\begin{gathered}
-\frac{\mathrm{d}}{\mathrm{d}\tau}\phi^*_\tau(\omega_{ab})=\frac{\mathrm{d}}{\mathrm{d}s}\phi^*_{\tau+s}(\omega_{ab})\Big|_{s=0}=\frac{\mathrm{d}}{\mathrm{d}s}\phi^*_\tau\circ\phi^*_s(\omega_{ab})\Big|_{s=0}\\=\phi^*_t\circ\frac{\mathrm{d}}{\mathrm{d}s}\phi^*_s(\omega_{ab})=\phi^*_t(\mathcal{L}_X\omega_{ab})
-\end{gathered}
-\]</span> 而根据嘉当恒等式<span
-class="math inline">\(\mathcal{L}_X=\iota_X\mathrm{d}+\mathrm{d}\iota_X\)</span>，有
-<span class="math display">\[
-\mathcal{L}_X\omega_{ab}=0-\mathrm{d}^2\mathscr{H}=0
-\]</span> 这意味着 <span class="math display">\[
-\frac{\mathrm{d}}{\mathrm{d}\tau}\phi^*_\tau(\omega_{ab})=0
-\]</span> 即动力学系统的演化同样保持辛形式不变。</p>
-<h2 id="总结">总结</h2>
+                <h1 id="连续介质的能动张量">连续介质的能动张量</h1>
 <p>​
-哈密顿力学的核心是辛形式，她由对偶基诱导得出。配合上给定的哈密顿量，既可以指定哈密顿向量场，她的积分曲线就是系统演化轨迹。在演化的过程中，辛形式保持不变。辛形式自然诱导出一种反对称双线性算子，称为泊松括号。此外，可以通过构造特殊的保辛坐标变换，使得新坐标系下的动力学方程形式不发生改变。</p>
+上一篇我们讨论的对象都是质点。对于她们，利用世界线，再加上我们新了解的四维物理量便能很清晰地描述。然而一些问题中的研究对象不能够当作质点，这给我们造成了极大的困难，本篇主要讨论解决的方案。讨论连续分布的介质时，我们通常关注整体平均效应而不是个别的粒子。这自然让我们想到空间中每点的能量、动量密度，能流、动量流密度等物理量。</p>
+<h2 id="能动张量">能动张量</h2>
+<p>​ 将这些物理量整合起来变为一个<span
+class="math inline">\((0,2)\)</span>型张量，就得到了<strong>能动张量</strong>，记为
+<span
+class="math inline">\(T_{ab}\)</span>。她是四维闵氏空间中的张量，各种三维的密度都是她的不同分量。她具有如下性质：</p>
+<ol type="1">
+<li><p><span class="math inline">\(T_{ab}=T_{ba}\)</span></p></li>
+<li><p>对于封闭系统，有<span
+class="math inline">\(\partial^aT_{ab}=0\)</span></p></li>
+<li><p>按照上一篇末讨论的瞬时观者定义（配备了4标架）给出瞬时观者<span
+class="math inline">\((p,(e_\mu)^a)\)</span>用于观测能动张量的分量。</p>
+<ol type="a">
+<li><p><span class="math inline">\(T_{00}=T_{ab}Z^a
+Z^b\)</span>是观者测量出的能量密度；</p></li>
+<li><p><span class="math inline">\(-T_{0i}=-T_{ab}Z^a
+(e_i)^b\)</span>是观者测量出的3动量密度（能流密度）的第<span
+class="math inline">\(i\)</span>分量；</p></li>
+<li><p><span class="math inline">\(T_{ij}=T_{ab} (e_i)^a
+(e_i)^b\)</span>是观者测量出的3应力张量的第<span
+class="math inline">\(ij\)</span>分量。</p></li>
+</ol></li>
+</ol>
 
                 
               </div>
@@ -440,7 +341,7 @@ class="math inline">\(\mathcal{L}_X=\iota_X\mathrm{d}+\mathrm{d}\iota_X\)</span>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%9D%82%E8%B0%88/" class="print-no-link">#杂谈</a>
+        <a href="/tags/%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0/" class="print-no-link">#微广笔记</a>
       
     </div>
   
@@ -452,8 +353,8 @@ class="math inline">\(\mathcal{L}_X=\iota_X\mathrm{d}+\mathrm{d}\iota_X\)</span>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>哈密顿力学的关键</div>
-      <div>https://l-lllll-06.github.io/2024/12/28/哈密顿力学的核心/</div>
+      <div>[微广笔记] 连续介质的能动张量</div>
+      <div>https://l-lllll-06.github.io/2025/01/10/[微广笔记] 连续介质的能动张量/</div>
     </div>
     <div class="license-meta">
       
@@ -465,7 +366,7 @@ class="math inline">\(\mathcal{L}_X=\iota_X\mathrm{d}+\mathrm{d}\iota_X\)</span>
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>December 28, 2024</div>
+          <div>January 10, 2025</div>
         </div>
       
       
@@ -497,18 +398,12 @@ class="math inline">\(\mathcal{L}_X=\iota_X\mathrm{d}+\mathrm{d}\iota_X\)</span>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/01/04/SR%E4%B8%AD%E7%9A%84least-action/" title="SR中的Least-Action">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">SR中的Least-Action</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/12/27/%5B%E5%BE%AE%E5%B9%BF%E7%AC%94%E8%AE%B0%5D%20SR%E4%B8%AD%E7%9A%84%E8%B4%A8%E7%82%B9%E5%8A%A8%E5%8A%9B%E5%AD%A6/" title="[微广笔记] SR中的质点动力学">
-                        <span class="hidden-mobile">[微广笔记] SR中的质点动力学</span>
+                      <a href="/2025/01/04/SR%E4%B8%AD%E7%9A%84least-action/" title="SR中的Least-Action">
+                        <span class="hidden-mobile">SR中的Least-Action</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
