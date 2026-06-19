@@ -1,0 +1,860 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="https://l-lllll-06.github.io/picx-images-hosting/cat.7w6vn0f2xw.jpg">
+  <link rel="icon" href="https://l-lllll-06.github.io/picx-images-hosting/IMG_0207.70b02ft8dj.PNG">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="-L_LLLLL-">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="力学-1 “原理”与动力学方程 惯性系  “惯性系是什么？“ ”它是力学定律在其中行之有效的参考系。” ——《物理学的进化》  惯性参考系（以下简称惯性系）不仅是力学的舞台，更是古典物理学的基石。在物理学的定义中，惯性系是指在时间、空间上均匀且各向同性的参考系。这个概念或许比较抽象，但是我们可以从一个简单的思想实验来理解。想象一个完全光滑的、绝对静止的平面。我们可以在平面上建立坐标系">
+<meta property="og:type" content="article">
+<meta property="og:title" content="力学-1 “原理”与动力学方程">
+<meta property="og:url" content="https://l-lllll-06.github.io/2026/06/19/%E5%8A%9B%E5%AD%A6-1%20%E2%80%9C%E5%8E%9F%E7%90%86%E2%80%9D%E4%B8%8E%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%96%B9%E7%A8%8B/index.html">
+<meta property="og:site_name" content="-L_LLLLL-">
+<meta property="og:description" content="力学-1 “原理”与动力学方程 惯性系  “惯性系是什么？“ ”它是力学定律在其中行之有效的参考系。” ——《物理学的进化》  惯性参考系（以下简称惯性系）不仅是力学的舞台，更是古典物理学的基石。在物理学的定义中，惯性系是指在时间、空间上均匀且各向同性的参考系。这个概念或许比较抽象，但是我们可以从一个简单的思想实验来理解。想象一个完全光滑的、绝对静止的平面。我们可以在平面上建立坐标系">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_1318.3nrucs48gm.png">
+<meta property="article:published_time" content="2026-06-19T05:32:02.000Z">
+<meta property="article:modified_time" content="2026-06-19T05:51:50.888Z">
+<meta property="article:author" content="-L_LLLLL-">
+<meta property="article:tag" content="物理学概述">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_1318.3nrucs48gm.png">
+  
+  
+  
+  <title>力学-1 “原理”与动力学方程 - -L_LLLLL-</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+
+
+  
+<link rel="stylesheet" href="/css/indeximg-hover.css">
+<link rel="stylesheet" href="/css/cloudedGlass.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"l-lllll-06.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>-L_LLLLL-</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://l-lllll-06.github.io/picx-images-hosting/Anime-Illustration/IMG_1318.3nrucs48gm.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="力学-1 “原理”与动力学方程"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        -L_LLLLL-
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-06-19 13:32" pubdate>
+          June 19, 2026 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.6k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          39 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">力学-1 “原理”与动力学方程</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="力学-1-原理与动力学方程">力学-1 “原理”与动力学方程</h1>
+<h2 id="惯性系">惯性系</h2>
+<blockquote>
+<p>“惯性系是什么？“</p>
+<p>”它是力学定律在其中行之有效的参考系。”</p>
+<p>——《物理学的进化》</p>
+</blockquote>
+<p><strong>惯性参考系</strong>（以下简称惯性系）不仅是力学的舞台，更是古典物理学的基石。在物理学的定义中，惯性系是指<strong>在时间、空间上均匀且各向同性</strong>的参考系。这个概念或许比较抽象，但是我们可以从一个简单的思想实验来理解。想象一个完全光滑的、绝对静止的平面。我们可以在平面上建立坐标系，并依次定义坐标、速度等物理量（这里不做过多说明）。若在平面上放置一个静止的小球，且确保其不受任何外界因素干扰，那么我们可以预见它将永远保持静止。这种必然性源于惯性系的空间各向同性：小球每个方向都完全等价，它没有理由偏向其中任何一方。而时间的均匀性则保证了无论过去多长时间，小球的环境始终保持不变。当小球拥有初始速度时，它将保持匀速直线运动的特性。审视小球运动的任意瞬间，由于空间是各向同性的，小球在下一时刻的路径没有理由向左或向右发生偏转，这在几何上决定了它的轨迹是直线；同时，由于时间是均匀的，运动状态在时上具有天然的持续性，这在物理上决定了它速度是恒定的。现在我们让小球往斜坡上滚动，小球的速度将会逐渐降低，最后在最高处归零。为了进一步确证这一点，我们可以引入伽利略著名的理想实验。让一个小球从斜坡滚下，它会冲上另一侧的斜坡直至达到相同的高度（这需要依赖现实中的经验）。随着我们逐渐减小另一侧斜坡的倾角，小球为了达到原有的高度，必须滚过越来越长的路径。以此类推，当倾角减小到零，即坡面完全变为水平时，为了寻回那消失的高度，小球将不得不沿着水平面永远运动下去。由此可见，<strong>在惯性参考系中，一个不受外界因素干扰的物体将永久处于静止或匀速直线运动</strong>。</p>
+<blockquote>
+<p>这便是大名鼎鼎的牛顿第一定律</p>
+</blockquote>
+<p>更进一步地，我们可以考虑一个相对于已知惯性系做匀速直线运动的新参考系。当这两个参考系同时观测同一个物体时，尽管它们记录的速度数值可能不同，但对物体运动“本质状态”的判定却是完全等价的。通过简单的物理数学推导可以验证，绝不可能出现一个参考系认为物体在做匀速直线运动，而另一个却判定其在做变速运动的情况。因此，这个新参考系同样完美符合惯性系的定义。这一推论揭示了一个极其重要的物理事实：<strong>任何相对于惯性系做匀速直线运动的参考系都是惯性系。</strong>相反，倘若我们置身于一个非惯性参考系中，就会轻易发现，即便一个物体完全不受任何外力干扰，它也无法总是保持静止或匀速直线运动状态。这种现象表明，牛顿第一定律所描绘的种种优良性质并非宇宙中随处可见的普遍现象，它只是惯性参考系独有的特权。由此，我们可以将这一认识升华到更高的理论高度。引入惯性系这一概念的初衷是给力学理论搭建一个有效的平台。换言之，<strong>不同惯性系视角下的同一个物理过程必须遵循完全相同的力学规律。</strong>这就是<strong>相对性原理</strong>。</p>
+<p>正当人们打算依靠惯性系这一强力武器在力学世界大展身手时，一个潜藏的严重漏洞却悄然浮现：我们究竟该如何确定一个参考系是惯性系？从根本上说，时空的均匀性与各向同性是无法被直接“观测”的，人们似乎只能诉诸实验，通过检验物体是否满足第一定律来反向验证。然而在实践中，这种经验主义的验证必然会陷入困境：我们永远无法确保在未来的某一个瞬间，或者宇宙的某一个未知角落，那个原本孤独运动的小球不会突然毫无征兆地改变状态。我们必须假设存在一个惯性系作为理论的逻辑起点，这种假设是力学理论得以构建的前提。虽然当前仍未引入第二定律，但是我们可以反驳一个流行观点，即第一定律只是第二定律的一个特例。这是对力学理论理解不到位而产生的错误观点。事实上，第一定律绝非第二定律的，相反，它是第二定律得以成立的先决条件。在现实世界中，由于观测的局限，人们难以在实践中百分之百坐实一个绝对纯粹的惯性系。第一定律不是在描述一种运动状态，而是作为理论的前提确保了惯性系的存在。</p>
+<h2 id="原理与动力学方程">”原理“与动力学方程</h2>
+<blockquote>
+<p>“大自然基本上是懒惰的——它总是采取作用量最小的路线。把这个重要概念提升为原理并赋予它精确的数学意义之后，物理学家们发觉它们能够以一种统一的形式描述从板球到基本粒子的一切事物的运动。”</p>
+<p>——《物理学——最小作用量所在之处》</p>
+</blockquote>
+<p><strong>最小作用量原理</strong>（以下简称”原理“）是站在物理学理论最中心的第一性原理，其统领的理论范围渗透了物理学的各个分支。“原理”体现了物理学根源上的信念——大自然是简洁的，它在完成某件事之前总是“精打细算”一番，从各种方式里面选择一个最优的路线。本篇将从”原理“的视角讨论力学理论。力学体系的<strong>作用量</strong>
+<span class="math display">\[
+S=\int_{t_1}^{t_2}\mathscr{L}\mathrm{d}t
+\]</span>
+即<strong>拉格朗日量</strong>（以下简称拉氏量或直接用字母代替）<span
+class="math inline">\(\mathscr{L}\)</span>对时间的积分。拉氏量是坐标<span
+class="math inline">\(\boldsymbol{q}\)</span>、速度<span
+class="math inline">\(\boldsymbol{\dot{q}}\)</span>与时间<span
+class="math inline">\(t\)</span>的函数。至于为什么不含有坐标的高阶导数，我们以后再进行解释。目前，我们可以说这是因为“经验表明”，也就是这是建立在大量的实验基础之上的结果。注意不要忘记物理学终究是一门自然科学，它的任何理论必需建立在实验的基础之上。在使用数学进行定量分析的过程中，绝不能过分沉溺于数学本身而忘记其背后所蕴含的物理实质。说回正题，如果我们对一个质点的运动路径进行观测——从起点到终点显然交织着无限多种可能的路径，其中哪一条才能够体现现实的情况？“原理”告诉我们当作用量泛函<span
+class="math inline">\(S\)</span>取到极值时对应的路径是现实的。也就是当
+<span class="math display">\[
+\delta S=0
+\]</span> 现在计算作用量的变分,需要满足<span
+class="math inline">\(\delta t=0\)</span>以及边界条件<span
+class="math inline">\(\delta\boldsymbol{q}|_{t_1}=\delta\boldsymbol{q}|_{t_2}=0\)</span>。</p>
+<p><span class="math display">\[
+\delta\int_{t_1}^{t_2}\mathscr{L}(\boldsymbol{q},\boldsymbol{\dot{q}},t)\mathrm{d}t=\int_{t_1}^{t_2}\delta\mathscr{L}(\boldsymbol{q},\boldsymbol{\dot{q}},t)\mathrm{d}t
+\\=\int_{t_1}^{t_2}\sum_{\alpha=1}^{n}(\frac{\partial\mathscr{L}}{\partial
+q_\alpha}\delta q_\alpha+
+\frac{\partial\mathscr{L}}{\partial\dot{q_\alpha}}\delta\dot{q_\alpha}+\frac{\partial\mathscr{L}}{\partial
+t}\delta t)\mathrm{d}t
+\\=\int_{t_1}^{t_2}\sum_{\alpha=1}^{n}(\frac{\partial\mathscr{L}}{\partial
+q_\alpha}\delta q_\alpha+
+\frac{\partial\mathscr{L}}{\partial\dot{q_\alpha}}\delta\dot{q_\alpha})\mathrm{d}t
+\]</span></p>
+<p>应用分部积分可以凑出一项时间的全导数，它可以直接积分并由边界条件消去
+<span class="math display">\[
+\int_{t_1}^{t_2}\sum_{\alpha=1}^{n}(\frac{\partial\mathscr{L}}{\partial
+q_\alpha}\delta q_\alpha+
+\frac{\partial\mathscr{L}}{\partial\dot{q_\alpha}}\delta\dot{q_\alpha})\mathrm{d}t=\int_{t_1}^{t_2}\sum_{\alpha=1}^{n}[\frac{\partial\mathscr{L}}{\partial
+q_\alpha}\delta
+q_\alpha+\frac{\mathrm{d}}{\mathrm{d}t}(\frac{\partial\mathscr{L}}{\partial\dot{q_\alpha}}\delta
+q_\alpha)-\frac{\mathrm{d}}{\mathrm{d}t}(\frac{\partial\mathscr{L}}{\partial\dot{q_\alpha}})\delta
+q_\alpha]\mathrm{d}t
+\\=\int_{t_1}^{t_2}\sum_{\alpha=1}^{n}[\frac{\partial\mathscr{L}}{\partial
+q_\alpha}\delta
+q_\alpha-\frac{\mathrm{d}}{\mathrm{d}t}(\frac{\partial\mathscr{L}}{\partial\dot{q_\alpha}})\delta
+q_\alpha]\mathrm{d}t
+\\=\int_{t_1}^{t_2}\sum_{\alpha=1}^{n}[(\frac{\partial\mathscr{L}}{\partial
+q_\alpha}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q_\alpha}})\delta
+q_\alpha]\mathrm{d}t=0
+\]</span> 由于各个<span class="math inline">\(\delta
+q_\alpha\)</span>之间相互独立，要想保证等式永久成立就只有要求 <span
+class="math display">\[
+\frac{\partial\mathscr{L}}{\partial
+q_\alpha}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q_\alpha}}=0
+\]</span>
+这便是著名的<strong>欧拉—拉格朗日方程</strong>。虽然它具有优雅的数学形式，然而在当下，这个方程依然只是一个外壳——因为我们对拉氏量的具体函数形式还一无所知。若无法揭示其内部结构，求解动力学方程便根本无从谈起。为此，我们首先将注意力放在惯性系中自由质点的拉格朗日量<span
+class="math inline">\(\mathscr{L}\)</span>上。我们不禁要追问：它和什么物理量有关？由于惯性系在时间上是均匀的，物理规律绝不会随着时间坐标的推移而发生任何自发的改变，这意味着拉氏量
+<span class="math inline">\(\mathscr{L}\)</span>
+必须在显式上与时间独立。同时，惯性系在空间上同样是均匀的，不存在任何居于特权地位的中心，也没有任何一个位置比其他位置更具优越性。这也就意味着拉氏量
+<span class="math inline">\(\mathscr{L}\)</span> 与质点的坐标 <span
+class="math inline">\(\boldsymbol{q}\)</span> 没有关联。</p>
+<p>在跨出更深的一步之前，不妨让我们暂时驻足，重新审视一次作用量求变分的过程：分部积分往往会在积分符号内部催生出一个关于时间的全导数项，该项可以直接进行积分，并在固定边界条件的约束下自动消去。这说明无论拉氏量的具体形式如何变化，只要它在带入欧拉—拉格朗日方程后能导出完全等价的动力学形式，其物理实质便是殊途同归的。这种形式上的差异普遍存在。最直观地，对拉氏量进行放缩<span
+class="math inline">\(\mathscr{L}\rightarrow
+k\mathscr{L}\)</span>仍然可以给出正确的动力学方程。更进一步地，由于“原理”的核心仅仅是<span
+class="math inline">\(\delta
+S=0\)</span>，这就意味着，我们完全可以在原作用量 <span
+class="math inline">\(S\)</span>
+上，任意加上一个在变分后自发消去的数学项。联想到边界条件<span
+class="math inline">\(\delta t=0\)</span>以及<span
+class="math inline">\(\delta\boldsymbol{q}|_{t_1}=\delta\boldsymbol{q}|_{t_2}=0\)</span>，我们可以确信，作用量在如下的映射关系中是完全等价的：
+<span class="math display">\[
+S\Leftrightarrow S+\phi(\boldsymbol{q},t)
+\]</span> 现在，如果我们尝试将<span
+class="math inline">\(\phi\)</span>放回到积分号之内，便得到了一个十分重要的的结论：任意两个描述同一现实物理系统的拉格朗日量之间可以相差一个关于坐标和时间的任意函数的全导数。
+<span class="math display">\[
+\mathscr{L}\Leftrightarrow\mathscr{L}+\frac{\mathrm{d}}{\mathrm{d}t}\phi(\boldsymbol{q},t)
+\]</span>
+既然有无限多种可以描述动力学实质的拉氏量存在，我们到底该如何选取？之前说过，不同惯性系视角下的同一个物理过程，必须遵循完全相同的力学规律——这就严格地限制了两个参考系中拉氏量的数学关系。我们考虑两个惯性系<span
+class="math inline">\(K\)</span>和<span
+class="math inline">\(K&#39;\)</span>，它们以无限小相对速度<span
+class="math inline">\(\boldsymbol{\epsilon}\)</span>运动。在两个惯性系的视角下的拉氏量形式上的差异被限制在了一个关于坐标和时间的函数的全导数之内，也就是说
+<span class="math display">\[
+\mathscr{L}(\boldsymbol{\dot{q}}+\boldsymbol{\epsilon})-\mathscr{L}(\boldsymbol{\dot{q}})=\frac{\mathrm{d}}{\mathrm{d}t}\phi(\boldsymbol{q},t)
+\]</span>
+将第一项展开成幂函数并减去第二项，它必须等于一个坐标和时间的函数的全导数
+<span class="math display">\[
+\mathscr{L}(\boldsymbol{\dot{q}}+\boldsymbol{\epsilon})-\mathscr{L}(\boldsymbol{\dot{q}})=\mathscr{L}(\boldsymbol{\dot{q}})+\nabla\mathscr{L}(\boldsymbol{\dot{q}})^\top\boldsymbol{\epsilon}+\frac{1}{2!}\boldsymbol{\epsilon}^\top\boldsymbol{H}(\boldsymbol{\dot{q}})\boldsymbol{\epsilon}+...-\mathscr{L}(\boldsymbol{\dot{q}})
+\\=\nabla\mathscr{L}(\boldsymbol{\dot{q}})^\top\boldsymbol{\epsilon}+\frac{1}{2!}\boldsymbol{\epsilon}^\top\boldsymbol{H}(\boldsymbol{\dot{q}})\boldsymbol{\epsilon}+...=\frac{\mathrm{d}}{\mathrm{d}t}\phi(\boldsymbol{q},t)
+\]</span> 要想达成这个条件，等式左边和<span
+class="math inline">\(\boldsymbol{\dot{q}}\)</span>最多呈二次依赖关系。这也就是说<span
+class="math inline">\(\mathscr{L}(\boldsymbol{\dot{q}})\)</span>可以表示成一个关于<span
+class="math inline">\(\boldsymbol{\dot{q}}\)</span>的二次多项式 <span
+class="math display">\[
+\mathscr{L}(\boldsymbol{\dot{q}})=\frac{1}{2}\boldsymbol{\dot{q}}^\top\boldsymbol{M}\boldsymbol{\dot{q}}+\boldsymbol{B}\boldsymbol{\dot{q}}+\boldsymbol{C}
+\]</span></p>
+<blockquote>
+<p>别问<span
+class="math inline">\(\frac{1}{2}\)</span>怎么来的，问就是为了消除求导后的系数，问就是为了搭配<span
+class="math inline">\(M\)</span>凑成我们熟悉的动能形式。</p>
+</blockquote>
+<p>我们注意到这个形式仍然不是最简的拉氏量，因为它其中仍有一部分可以表为一个坐标和时间相关的函数的全导数
+<span class="math display">\[
+\boldsymbol{B}\boldsymbol{\dot{q}}+\boldsymbol{C}=\frac{\mathrm{d}}{\mathrm{d}t}(\boldsymbol{B}\boldsymbol{q}+\boldsymbol{C}t)
+\]</span>
+消去这对动力学方程没有贡献的部分，我们得到了惯性系中自由质点最简的拉氏量
+<span class="math display">\[
+\mathscr{L}(\boldsymbol{\dot{q}})=\frac{1}{2}\boldsymbol{\dot{q}}^\top\boldsymbol{M}\boldsymbol{\dot{q}}
+\]</span>
+如果选取笛卡尔坐标，它会变成我们从中学以来就十分熟悉的形式。将其定义为质点的<strong>动能</strong>
+<span class="math display">\[
+\mathscr{L}=T=\frac{1}{2}m\dot{r}^2
+\]</span>
+现在我们已经知晓了惯性系中自由质点的拉氏量，令质点位置向量为<span
+class="math inline">\(\boldsymbol{r}\)</span>，我们直接将其代入到动力学方程
+<span class="math display">\[
+\frac{\partial\mathscr{L}}{\partial
+q_\alpha}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{q_\alpha}}=0
+\\\frac{\mathrm{d}}{\mathrm{d}t}(m\boldsymbol{\dot{r}})=0
+\]</span>
+可以看出质点的速度向量是常数，这和我们设想的一致。接下来让我们定义一些新的物理量，它们将帮助我们更好地理解力学理论。
+<span class="math display">\[
+p_\alpha:=\frac{\partial\mathscr{L}}{\partial\dot{q_\alpha}}
+\]</span> <span
+class="math inline">\(p_\alpha\)</span>是力学系统的动量，它被定义为拉氏量对速度的偏导数。可以看到对于惯性系中的自由质点的各个坐标<span
+class="math inline">\(x\)</span>、<span
+class="math inline">\(y\)</span>、<span
+class="math inline">\(z\)</span>，动量分别是是<span
+class="math inline">\(m\boldsymbol{\dot{x}}\)</span>、<span
+class="math inline">\(m\boldsymbol{\dot{y}}\)</span>、<span
+class="math inline">\(m\boldsymbol{\dot{z}}\)</span>，总动量是<span
+class="math inline">\(m\boldsymbol{\dot{r}}\)</span>。根据动力学方程给出的结果，它应该是常数
+<span class="math display">\[
+m\boldsymbol{\dot{r}}=const.
+\]</span> 这便是动量守恒的一个具体的体现。</p>
+<p>在彻底厘清了惯性系中自由质点的运动机理之后，是时候将目光投向更复杂的情形了。当自由质点受到某种相互作用时，因为外部源或相互作用的存在，对于质点而言各向同性将不复存在——质点在某些位置受到的相互作用与在另一些位置截然不同。这时，质点的运动也将会和其位置有关。为了处理这一点，我们可以在拉氏量上添加一个只和位置有关的函数<span
+class="math inline">\(V(\boldsymbol{q})\)</span>，称为<strong>势能</strong>。
+<span class="math display">\[
+\mathscr{L}=T-V=\frac{1}{2}\boldsymbol{\dot{q}}^\top\boldsymbol{M}\boldsymbol{\dot{q}}-V(\boldsymbol{q})
+\]</span> 对于<span
+class="math inline">\(-V(\boldsymbol{q})\)</span>，我们知道必然存在一个向量场<span
+class="math inline">\(\boldsymbol{F}(\boldsymbol{q})\)</span>使得 <span
+class="math display">\[
+\boldsymbol{F}=-\nabla V
+\]</span>
+该向量场表示了质点受到的相互作用，不妨将其称为<strong>力</strong>。考虑到现实情况，并不是所有相互作用都可以用势能表示（这种力称为<strong>保守力</strong>）。这时为了处理相互作用，动力学方程需要变为
+<span class="math display">\[
+\frac{\partial T}{\partial
+q_\alpha}-\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial
+T}{\partial\dot{q_\alpha}}=F_\alpha
+\]</span> 很容易证明它与第二定律完全等价。<span
+class="math inline">\(F_\alpha\)</span>的形式需要视具体情况而定，没有通用的表达式。</p>
+<blockquote>
+<p>极个别的情况下可以扩充势函数的定义方便处理问题。注意到当势函数与速度呈线性关系时，它对于动力学方程的结果没有影响。这种情况下可以将含有速度的项纳入势函数，它会在求偏导后消失。</p>
+</blockquote>
+<p>看到这里，目光敏锐的读者或许会产生质疑：我们在通过最小作用量原理构建力学理论的过程中，从未给非保守力留下过任何位置。在一个充斥着非保守力的真实世界里，这难道不是该理论的一个严重缺陷吗？这并不是理论缺陷——在现代物理学的视界下，宇宙中所有纷繁复杂的现象最终都可以归结为四种基本相互作用（引力、电磁力、强相互作用与弱相互作用），而这些本质的相互作用，归根结底都是绝对保守的。在实际的物理问题中，之所以会衍生出非保守力，仅仅是因为我们的观测视角还不够宏大，没有把系统内部无数微观粒子的热运动、电磁辐射等整体细节全部纳入考量。“原理”确立了物理学最核心的秩序，对于某些因视角局限而产生的、属于实际具体问题的细节，它并不特别在意。</p>
+<p>接下来让我们考虑惯性系中两个质点之间的相互作用。我们已经知道，在没有外场的情况下动量守恒。而根据动力学方程，这也就是说
+<span class="math display">\[
+\sum_{\alpha=1}^n\frac{\partial\mathscr{L}}{\partial
+q_\alpha}=\sum_{\alpha=1}^n\frac{\partial V}{\partial q_\alpha}=\nabla
+V=0
+\\\sum\boldsymbol{F}=0
+\]</span> 作用在两个质点上的力之和等于0。也就是说<span
+class="math inline">\(\boldsymbol{F_1}+\boldsymbol{F_2}=0\)</span>，两个质点的相互作用力等大、反向。</p>
+<blockquote>
+<p>这是第三定律</p>
+</blockquote>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%89%A9%E7%90%86/" class="category-chain-item">物理</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E7%89%A9%E7%90%86%E5%AD%A6%E6%A6%82%E8%BF%B0/" class="print-no-link">#物理学概述</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>力学-1 “原理”与动力学方程</div>
+      <div>https://l-lllll-06.github.io/2026/06/19/力学-1 “原理”与动力学方程/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>-L_LLLLL-</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>June 19, 2026</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script><!-- hexo injector body_end end --></body>
+</html>
