@@ -1,0 +1,998 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="https://l-lllll-06.github.io/picx-images-hosting/cat.7w6vn0f2xw.jpg">
+  <link rel="icon" href="https://l-lllll-06.github.io/picx-images-hosting/IMG_0207.70b02ft8dj.PNG">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="-L_LLLLL-">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="力学-2 对称性与守恒律 在上一篇中，我们从惯性系与相对性原理出发，以最小作用量原理为理论根基，建立了经典力学的基本框架。通过对作用量进行变分，我们得到了欧拉—拉格朗日方程，并结合惯性系的性质进一步确定了自由质点拉格朗日量的形式。在此基础上，动量、势能以及力等物理量被自然引入，牛顿三定律也作为动力学方程的直接推论相继得到。与此同时，一个守恒结构也已悄然浮现：在无外场的情况下，自由质点的拉格朗日量">
+<meta property="og:type" content="article">
+<meta property="og:title" content="力学-2 对称性与守恒律">
+<meta property="og:url" content="https://l-lllll-06.github.io/2026/06/23/%E5%8A%9B%E5%AD%A6-2%20%E5%AF%B9%E7%A7%B0%E6%80%A7%E4%B8%8E%E5%AE%88%E6%81%92%E5%BE%8B/index.html">
+<meta property="og:site_name" content="-L_LLLLL-">
+<meta property="og:description" content="力学-2 对称性与守恒律 在上一篇中，我们从惯性系与相对性原理出发，以最小作用量原理为理论根基，建立了经典力学的基本框架。通过对作用量进行变分，我们得到了欧拉—拉格朗日方程，并结合惯性系的性质进一步确定了自由质点拉格朗日量的形式。在此基础上，动量、势能以及力等物理量被自然引入，牛顿三定律也作为动力学方程的直接推论相继得到。与此同时，一个守恒结构也已悄然浮现：在无外场的情况下，自由质点的拉格朗日量">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://l-lllll-06.github.io/picx-images-hosting/for-blog/101891205_p0_master1200.2a5ra7jjyn.webp">
+<meta property="article:published_time" content="2026-06-23T13:25:28.000Z">
+<meta property="article:modified_time" content="2026-06-24T07:57:30.341Z">
+<meta property="article:author" content="-L_LLLLL-">
+<meta property="article:tag" content="物理学简述">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://l-lllll-06.github.io/picx-images-hosting/for-blog/101891205_p0_master1200.2a5ra7jjyn.webp">
+  
+  
+  
+  <title>力学-2 对称性与守恒律 - -L_LLLLL-</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+
+
+  
+<link rel="stylesheet" href="/css/indeximg-hover.css">
+<link rel="stylesheet" href="/css/cloudedGlass.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"l-lllll-06.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>-L_LLLLL-</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://l-lllll-06.github.io/picx-images-hosting/for-blog/101891205_p0_master1200.2a5ra7jjyn.webp') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="力学-2 对称性与守恒律"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        -L_LLLLL-
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-06-23 21:25" pubdate>
+          June 23, 2026 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.1k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          35 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">力学-2 对称性与守恒律</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="力学-2-对称性与守恒律">力学-2 对称性与守恒律</h1>
+<p>在上一篇中，我们从惯性系与相对性原理出发，以最小作用量原理为理论根基，建立了经典力学的基本框架。通过对作用量进行变分，我们得到了欧拉—拉格朗日方程，并结合惯性系的性质进一步确定了自由质点拉格朗日量的形式。在此基础上，动量、势能以及力等物理量被自然引入，牛顿三定律也作为动力学方程的直接推论相继得到。与此同时，一个守恒结构也已悄然浮现：在无外场的情况下，自由质点的拉格朗日量不显含坐标，因此动量守恒；更一般地，封闭系统的总动量亦守恒。为回答上一篇留下的问题，我们需要暂时跳出具体的运动方程，将目光转向“对称性”。正是在这里，人们逐渐发现，各种看似独立的守恒律，其实都隐藏在同一结构之中。</p>
+<h2 id="对称性与守恒律">对称性与守恒律</h2>
+<blockquote>
+<p>“无论人们赋予”对称”多么宽广或狭窄的含义，它始终是人类在漫长岁月中用来理解和创造秩序、美和完美的一种思想。</p>
+<p>——《对称性》</p>
+</blockquote>
+<p>在日常语言中，“对称”通常意味着均衡、协调与美感。它既存在于自然界，也作为一种美学准则深刻影响着艺术与建筑。然而在物理学中，对称性并不仅仅是一种静态的几何特征。例如，一个正方形之所以被称为对称，并不是因为它“看起来均匀”，而是因为它在绕中心旋转
+<span class="math inline">\(90^\circ\)</span>
+或关于对称轴反射后仍保持不变。换言之，对称性描述的是<strong>在某种变换下保持不变的性质</strong>。因此，对称性这一概念逐渐从几何形式提升为一种更普遍的“不变性结构”。当人们将视角从几何图形转向自然规律时会发现，自然规律同样可能具有对称性。例如，在惯性系中，自由质点的运动是匀速直线运动。当其位置发生平移后，其运动规律并不改变；当时间流逝时，其动力学形式也保持不变。</p>
+<p>从数学上看，对称性必须通过“变换”来定义。考虑场<span
+class="math inline">\(\varphi(x)\)</span>的无穷小变换 <span
+class="math display">\[
+\varphi\rightarrow\varphi&#39;=\varphi+\delta\varphi
+\]</span> 在坐标变换 <span class="math inline">\(x^a \rightarrow x^a +
+\delta x^a\)</span> 下，有 <span class="math display">\[
+\delta \varphi(x) = \varphi(x + \delta x) - \varphi(x)
+= \delta x^a \partial_a \varphi + O(\delta x^2)
+\]</span> 即 <span class="math display">\[
+\delta \varphi(x) = \delta x^a \partial_a \varphi
+\]</span>
+然而，仅有变换本身并不足以构成“对称性”，还需要附加一个关键条件：<strong>物理定律在该变换下保持不变</strong>。上一篇曾经提到，为了保证动力学方程不变，拉格朗日量之间可以最多可以相差一个全导数项
+<span class="math display">\[
+\mathscr{L}(\boldsymbol{\dot{q}}+\boldsymbol{\epsilon})-\mathscr{L}(\boldsymbol{\dot{q}})=\frac{\mathrm{d}}{\mathrm{d}t}f(\boldsymbol{q},t)
+\]</span> 这正是拉氏量的无穷小变换<span
+class="math inline">\(\delta\mathscr{L}\)</span>。可以进行推广，即<strong>若一个变换是对称性，则要求作用量最多改变一个边界项</strong>
+<span class="math display">\[
+\delta\mathscr{L}=\partial_af^a
+\]</span></p>
+<p>定义作用量 <span class="math display">\[
+S[\varphi]:=\int_M\mathrm{d}^nx\mathscr{L}[\varphi(x),\partial_a\varphi(x),x]
+\]</span> 由对称性条件可得 <span class="math display">\[
+\delta\int_M\mathrm{d}^n
+x\mathscr{L}=\int_M\mathrm{d}^nx\delta\mathscr{L}=\int_M\mathrm{d}^nx\partial_a
+f^a
+\]</span> 另一方面，对作用量直接变分 <span class="math display">\[
+\delta\int_M\mathrm{d}^n
+x\mathscr{L}=\int_M\mathrm{d}^nx\delta\mathscr{L}\\
+=\int_M\mathrm{d}^nx\left[\frac{\partial\mathscr{L}}{\partial\varphi}\delta\varphi+\frac{\partial\mathscr{L}}{\partial(\partial_a\varphi)}\partial_a\delta\varphi\right]\\
+=\int_M\mathrm{d}^nx\left[\left(\frac{\partial\mathscr{L}}{\partial\varphi}-\partial_\mu\frac{\partial\mathscr{L}}{\partial(\partial_a\varphi)}\right)\delta\varphi+\partial_a\left(\frac{\partial\mathscr{L}}{\partial(\partial_a\varphi)}\delta\varphi\right)\right]
+\]</span>
+我们注意到第一项括号内正好是欧拉—拉格朗日方程。这样只剩下第二项 <span
+class="math display">\[
+\delta\int_M\mathrm{d}^n
+x\mathscr{L}=\int_M\mathrm{d}^nx\partial_a\left(\frac{\partial\mathscr{L}}{\partial(\partial_a\varphi)}\delta\varphi\right)
+\]</span> 比较作用量变分的两种形式，得到 <span class="math display">\[
+\int_M\mathrm{d}^nx\partial_a\left(\frac{\partial\mathscr{L}}{\partial(\partial_\mu\varphi)}\delta\varphi-f^a\right)=0
+\]</span> 这要求 <span class="math display">\[
+\partial_a J^a=0\\
+J^a:=\frac{\partial\mathscr{L}}{\partial(\partial_a\varphi)}\delta\varphi-f^a
+\]</span> &gt;一旦选定了坐标系，就可以使用具体指标。</p>
+<p>这就是著名的<strong>诺特定理</strong>。诺特定理是理论物理学的中心结论之一，它表示了<strong>对于任意一个连续对称性，总有与其相应的守恒定律</strong>。</p>
+<blockquote>
+<p>埃米·诺特，德国数学家。多位知名学者将她誉为历史上最杰出的女性数学家。在物理方面，她所证明的诺特定理揭示了对称性和守恒律之间的紧密联系，是现代物理学发展历程中最重要的定理之一。</p>
+</blockquote>
+<p>可以看到诺特定理给出了一个连续性方程。我们把连续性方程积分 <span
+class="math display">\[
+\int_M\mathrm{d}^nx\partial_\mu J^\mu=0
+\]</span> 由于区域<span
+class="math inline">\(M\)</span>不含时，可以分离时间 <span
+class="math display">\[
+\int\mathrm{d}t\int_\Sigma\mathrm{d}^{n-1}x(\partial_0J^0+\partial_iJ^i)\\
+=\int\mathrm{d}t\left[\partial_0\int_\Sigma\mathrm{d}^{n-1}xJ^0+\int_\Sigma\mathrm{d}^{n-1}x\partial_iJ^i\right]\\
+=\int\mathrm{d}t\left[\frac{\mathrm{d}}{\mathrm{d}t}\int_\Sigma\mathrm{d}^{n-1}xJ^0+\int_{\partial\Sigma}\mathrm{d}S_iJ^i\right]
+\]</span> 由于<span
+class="math inline">\(\int\mathrm{d}t\)</span>任意，要想全式为0必须保证括号内是0。也就是
+<span class="math display">\[
+\frac{\mathrm{d}}{\mathrm{d}t}\int_\Sigma\mathrm{d}^{n-1}xJ^0+\int_{\partial\Sigma}\mathrm{d}S_iJ^i=0
+\]</span> 若系统封闭，则边界通量为零，则 <span class="math display">\[
+\frac{\mathrm{d}Q}{\mathrm{d}t}=\frac{\mathrm{d}}{\mathrm{d}t}\int_\Sigma\mathrm{d}^{n-1}xJ^0=0\\
+Q:=\int_\Sigma\mathrm{d}^{n-1}xJ^0
+\]</span>
+即<strong>守恒荷</strong>。可以从一个非常通俗的角度来理解守恒流和守恒荷（虽然并不准确）。想象一个房子里面有三个互相连通的房间<span
+class="math inline">\(A\)</span>，<span
+class="math inline">\(B\)</span>，<span
+class="math inline">\(C\)</span>。房间里面的人只能进入不同的房间，不可以走出房子。在这个场景下，总人数永远是一个定值。定义从<span
+class="math inline">\(A\)</span>去<span
+class="math inline">\(B\)</span>的人数与从<span
+class="math inline">\(B\)</span>去<span
+class="math inline">\(A\)</span>的人数之差为<span
+class="math inline">\(J^\mu\)</span>，同理可以定义<span
+class="math inline">\(J^\nu\)</span>，<span
+class="math inline">\(J^\sigma\)</span>。考察各个房间人数的变化，我们可以给出这个场景下的连续性方程
+<span class="math display">\[
+\frac{\Delta N_A}{\Delta t}=J^\sigma-J^\mu\\
+\frac{\Delta N_B}{\Delta t}=J^\mu-J^\nu\\
+\frac{\Delta N_C}{\Delta t}=J^\nu-J^\sigma
+\]</span> 将所有变化率相加可以验证总人数不变 <span
+class="math display">\[
+\frac{\Delta N}{\Delta t}=0
+\]</span> 按照定义，守恒流的时间分量应该是 <span class="math display">\[
+J^0(i)\begin{cases}
+N_A\qquad i=A\\
+N_B\qquad i=B\\
+N_C\qquad i=C
+\end{cases}
+\]</span> 将所有情况求和（因为是离散的情况）得到守恒荷<span
+class="math inline">\(Q\)</span>，它刚好是总人数。</p>
+<h2 id="守恒律">守恒律</h2>
+<h3 id="经典力学场举例">经典力学场举例</h3>
+<p>我们可以考虑经典力学的场景（毕竟这是力学篇）。考虑空间平移，在选定坐标系后就可以使用具体指标<span
+class="math inline">\(x^\mu\rightarrow
+x^\mu+a^\mu\)</span>。对于当前情景，容易得到<span
+class="math inline">\(\delta x^\mu=a^\mu\)</span>。考虑到<span
+class="math inline">\(a^\mu\)</span>是常数，发现满足对称性条件 <span
+class="math display">\[
+\delta\mathscr{L}=a^\nu\partial_\nu\mathscr{L}=\partial_\nu(a^\nu\mathscr{L})\\
+f^\mu:=a^\nu\delta^\mu_{\ \nu}\mathscr{L}
+\]</span></p>
+<p>经典力学的场景下<span
+class="math inline">\(\varphi\)</span>退化成坐标<span
+class="math inline">\(x\)</span>，而指标就只有<span
+class="math inline">\(\mu=0\)</span>。构造守恒流，设<span
+class="math inline">\(i=1,2,3\dots ;i\ne0\)</span> <span
+class="math display">\[
+J^i=\frac{\partial\mathscr{L}}{\partial\dot{x}^i}a^i-a^i\delta^i_{\
+\nu}\mathscr{L}=\frac{\partial\mathscr{L}}{\partial\dot{x}^i}a^i
+\]</span> 而<span class="math inline">\(a^i\)</span>是常数，也就是 <span
+class="math display">\[
+p^i=\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathscr{L}}{\partial\dot{x}^i}=0
+\]</span>
+给出了其中一个方向动量守恒的结果（空间旋转与空间平移处理流程相似，它会给到动量矩守恒。在没有选定具体的坐标之前，它们都有相同的表达式）。同理，我们可以考察时间平移对称性。<span
+class="math inline">\(t^0\rightarrow t^0+\tau^0\)</span>。 <span
+class="math display">\[
+J^0=\frac{\partial\mathscr{L}}{\partial\dot{x}^i}\dot{x}^i\tau^0-\mathscr{L}\tau^0\\
+\frac{\mathrm{d}}{\mathrm{d}t}\left[\frac{\partial\mathscr{L}}{\partial\dot{x}^i}\dot{x}^i-\mathscr{L}\right]=0
+\]</span>
+可以看到，时间平移对称性给出了能量守恒的结果。如果我们举一个具体的例子，它将退化成我们熟悉的形式。假设拉氏量
+<span class="math display">\[
+\mathscr{L}=\frac{1}{2}m\dot{x}^2-V(x)
+\]</span> 带入到方程 <span class="math display">\[
+E=\frac{\partial\mathscr{L}}{\partial\dot{x}^i}\dot{x}^i-\mathscr{L}=m\dot{x}^2-\frac{1}{2}m\dot{x}^2+V(x)=\frac{1}{2}m\dot{x}^2+V(x)
+\]</span> 正是我们在中学学习过的机械能守恒定律。</p>
+<h3 id="能动张量">能动张量</h3>
+<h3 id="正则能动张量">正则能动张量</h3>
+<p>诺特定理的威力并不局限于经典力学。考虑时空平移变换<span
+class="math inline">\(x^a\rightarrow
+x^a+\xi^a\)</span>，它的形式和我们前面提到的空间平移非常相似，但是具有本质不同，时空变换也包含对时间的变换。
+<span class="math display">\[
+\delta x^a=\xi^a\\
+\delta\mathscr{L}=\xi^a\partial_a\mathscr{L}=\partial_a(\xi^a\mathscr{L})\\
+\delta\varphi=\xi^a\partial_a\varphi
+\]</span> 直接带入守恒流 <span class="math display">\[
+J^a=\left[\frac{\partial\mathscr{L}}{\partial(\partial_a\varphi)}\partial_b\varphi-\mathscr{L}\right]\xi^a
+\]</span>
+定义<strong>正则能量动量张量</strong>，简称<strong>正则能动张量</strong>
+<span class="math display">\[
+J^a=T^{ab}\xi_b=T^{ab}\eta_{bc}\xi^c\\
+T^{ab}:=\frac{\partial\mathscr{L}}{\partial(\partial_a\varphi)}\partial^b\varphi-\eta^{ab}\mathscr{L}
+\]</span> 考虑守恒流，如果<span
+class="math inline">\(\xi^a\)</span>是常数 <span class="math display">\[
+\partial_a(T^{ab}\xi_b)=\xi_b\partial_aT^{ab}=0\\
+\partial_aT^{ab}=0
+\]</span>
+这也就是说对于时空平移对称性下正则能动张量满足连续性方程。我们可以考虑四维闵氏度量，即<span
+class="math inline">\(\eta^{\mu\nu}=\text{diag}(1,-1,-1,-1)\)</span></p>
+<blockquote>
+<p>也可以是<span
+class="math inline">\(\eta^{\mu\nu}=\text{diag}(-1,1,1,1)\)</span>，最后结果会相差一个负号。为了方便讨论这里采用<span
+class="math inline">\(\eta^{\mu\nu}=\text{diag}(1,-1,-1,-1)\)</span>。</p>
+</blockquote>
+<p>考察分量<span class="math inline">\(T^{00}\)</span>，注意到<span
+class="math inline">\(\partial^0=\partial_0\)</span>，有 <span
+class="math display">\[
+T^{00}=\frac{\partial\mathscr{L}}{\partial(\partial_0\varphi)}\partial^0\varphi-\mathscr{L}=\frac{\partial\mathscr{L}}{\partial\dot{\varphi}}\dot{\varphi}-\mathscr{L}
+\]</span>
+这正好是<strong>能量密度</strong>。对整个空间积分能够得到总能量 <span
+class="math display">\[
+E=\int_\Sigma\mathrm{d}^3xT^{00}
+\]</span> 再来看分量<span
+class="math inline">\(T^{0i}\)</span>，这时<span
+class="math inline">\(\partial^i=-\partial_i\)</span> <span
+class="math display">\[
+T^{0i}=\frac{\partial\mathscr{L}}{\partial(\partial_0\varphi)}\partial^i\varphi=-\frac{\partial\mathscr{L}}{\partial\dot{\varphi}}\partial_i\varphi
+\]</span> 我们难以看出其物理意义。不妨考虑正则能动张量的定义，考察分量
+<span class="math display">\[
+J^0=T^{0\mu}\xi_\mu
+\]</span> <span
+class="math inline">\(\mu=0\)</span>就是上一个情况，可以看到这时候时空平移变换正好是时间平移变换，于是给出能量密度。而对于<span
+class="math inline">\(\mu=i\ne0\)</span>的情况，可以看到时空平移变换这时候是空间平移变换。我们知道它给出动量密度。也就是说，<span
+class="math inline">\(T^{0i}\)</span>表示的是第<span
+class="math inline">\(i\)</span>个坐标方向上的<strong>动量密度</strong>。对空间积分也可以得到第<span
+class="math inline">\(i\)</span>个坐标方向上的动量 <span
+class="math display">\[
+P^i=\int_\Sigma\mathrm{d}^3xT^{0i}
+\]</span> 继续考察分量<span class="math inline">\(T^{i0}\)</span>，
+<span class="math display">\[
+T^{i0}=\frac{\partial\mathscr{L}}{\partial(\partial_i\varphi)}\dot{\varphi}
+\]</span> 它同样和时间平移变换相关，因为 <span class="math display">\[
+J^i=T^{i0}\xi_0
+\]</span> 我们考察正则能动张量的连续性方程 <span class="math display">\[
+\partial_tT^{00}+\partial_iT^{i0}=0
+\]</span> 再依据<span
+class="math inline">\(T^{00}\)</span>的意义即可立即得到<span
+class="math inline">\(T^{i0}\)</span>是第<span
+class="math inline">\(i\)</span>个坐标方向上的<strong>能流密度</strong>。对空间积分即可得到第<span
+class="math inline">\(i\)</span>个坐标方向上的<strong>能流</strong>
+<span class="math display">\[
+e^i=\int_\Sigma\mathrm{d}^3xT^{i0}
+\]</span> 最后是<span class="math inline">\(T^{ij}\)</span>的情况 <span
+class="math display">\[
+T^{ij}=-\frac{\partial\mathscr{L}}{\partial(\partial_i\varphi)}\partial_j\varphi-(-\delta^{ij})\mathscr{L}\\
+=\delta^{ij}\mathscr{L}-\frac{\partial\mathscr{L}}{\partial(\partial_i\varphi)}\partial_j\varphi
+\]</span> 同样，它和空间平移变换有关联 <span class="math display">\[
+J^i=T^{ij}\xi_j
+\]</span> 正则能动张量的连续性方程 <span class="math display">\[
+\partial_tT^{0j}+\partial_iT^{ij}=0
+\]</span> 我们已经知晓<span
+class="math inline">\(T^{0j}\)</span>的意义是<span
+class="math inline">\(j\)</span>方向上的动量密度，那么<span
+class="math inline">\(T^{ij}\)</span>就是第<span
+class="math inline">\(j\)</span>个坐标方向上的动量密度沿第<span
+class="math inline">\(i\)</span>个坐标方向的<strong>动量流密度</strong>。同样对空间积分，得到第<span
+class="math inline">\(j\)</span>个坐标方向上沿第<span
+class="math inline">\(i\)</span>个坐标方向的<strong>动量流</strong>。
+<span class="math display">\[
+p^i=\int_\Sigma\mathrm{d}^3xT^{ij}
+\]</span> 我们还可以看到<span
+class="math inline">\(T^{ij}\)</span>的另一层含义。仍考虑连续性方程，将其积分
+<span class="math display">\[
+\int_\Sigma\mathrm{d}^3x(\partial_tT^{0j}+\partial_iT^{ij})=0\\
+\int_\Sigma\mathrm{d}^3x\partial_tT^{0j}=-\int_\Sigma\mathrm{d}^3x\partial_iT^{ij}\\
+\frac{\mathrm{d}}{\mathrm{d}t}P^j=-\int_\Sigma\mathrm{d}^3x\partial_iT^{ij}=-\int_{\partial\Sigma}\mathrm{d}S_iT^{ij}
+\]</span> 而第一项刚好是作用在这片区域上的力。而<span
+class="math inline">\(T^{ij}\)</span>正是力<span
+class="math inline">\(F^j\)</span>在<span
+class="math inline">\(i\)</span>方向上施加的<strong>应力</strong>。其中当<span
+class="math inline">\(i=j\)</span>时为<strong>正向应力</strong>，<span
+class="math inline">\(i\ne j\)</span>时为<strong>剪切应力</strong>。</p>
+<table>
+
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">对称性</th>
+<th style="text-align: center;">表达式</th>
+<th style="text-align: center;">物理意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(T^{00}\)</span></td>
+<td style="text-align: center;">时间平移</td>
+<td style="text-align: center;"><span
+class="math inline">\(\frac{\partial\mathscr{L}}{\partial\dot{\varphi}}\dot{\varphi}-\mathscr{L}\)</span></td>
+<td style="text-align: center;">能量密度</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(T^{0i}\)</span></td>
+<td style="text-align: center;">空间平移</td>
+<td style="text-align: center;"><span
+class="math inline">\(-\frac{\partial\mathscr{L}}{\partial\dot{\varphi}}\partial_i\varphi\)</span></td>
+<td style="text-align: center;">动量密度</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(T^{i0}\)</span></td>
+<td style="text-align: center;">时间平移</td>
+<td style="text-align: center;"><span
+class="math inline">\(\frac{\partial\mathscr{L}}{\partial(\partial_i\varphi)}\dot{\varphi}\)</span></td>
+<td style="text-align: center;">能流密度</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span
+class="math inline">\(T^{ij}\)</span></td>
+<td style="text-align: center;">空间平移</td>
+<td style="text-align: center;"><span
+class="math inline">\(\delta^{ij}\mathscr{L}-\frac{\partial\mathscr{L}}{\partial(\partial_i\varphi)}\partial_j\varphi\)</span></td>
+<td style="text-align: center;">动量流密度（应力）</td>
+</tr>
+</tbody>
+</table>
+<p>可以看到，基于时空变换得到的正则能动张量可以很方便地给出连续介质力学中的各种定义，而这一切都与对称性有紧密的联系。</p>
+<h3 id="能动张量-1">能动张量</h3>
+<p>更广泛地，我们可以考虑任意黎曼流形<span
+class="math inline">\((M,g_{ab})\)</span>上的情况。若存在向量场<span
+class="math inline">\(\xi^a\)</span>使得流形的度量能够在这组向量方向上保持不变（李导数为零），即
+<span class="math display">\[
+\mathcal{L}_{\xi^a}g_{ab}=0
+\]</span>
+则称其为<strong>killing向量场</strong>。在我们的例子中，Killing
+向量场生成了时空的等距变换。构造<span
+class="math inline">\(J^a\)</span>向量 <span class="math display">\[
+J^a=T^{ab}\xi_b
+\]</span> 考察它的协变导数 <span class="math display">\[
+\nabla_a(T^{ab}\xi_b)=(\nabla_aT^{ab})\xi_b+T^{ab}\nabla_a\xi_b
+\]</span> 注意到killing向量场满足<span
+class="math inline">\(\nabla_{(a}\xi_{b)}=0\)</span>，则 <span
+class="math display">\[
+(\nabla_aT^{ab})\xi_b+T^{ab}\nabla_a\xi_b\\
+=(\nabla_aT^{ab})\xi_b+T^{ab}\nabla_a\xi_b\\
+=(\nabla_aT^{ab})\xi_b+T^{(ab)}\nabla_{(a}\xi_{b)}+T^{[ab]}\nabla_{[a}\xi_{b]}\\
+=(\nabla_aT^{ab})\xi_b+T^{[ab]}\nabla_{[a}\xi_{b]}
+\]</span> 如果满足时空平移对称性，依据前文的讨论我们可以直接得到 <span
+class="math display">\[
+\nabla_aT^{ab}=0\\
+\nabla_{a}\xi_{b}=0
+\]</span> 于是有守恒流 <span class="math display">\[
+\nabla_aJ^a=0
+\]</span>
+如果存在某种特殊情形，使得正则能动张量是对称张量，那么之前的推导中第二项将直接消失。我们可以考虑张量<span
+class="math inline">\(B^{cab}\)</span>，如果满足 <span
+class="math display">\[
+B^{cab}=-B^{acb}\\
+\nabla_cB^{c[ab]}=-T^{[ab]}\\
+\nabla_a\nabla_cB^{cab}=0
+\]</span> 那么就有 <span class="math display">\[
+T_{new}^{ab}:=T^{ab}+\nabla_cB^{cab}\\
+\nabla_aT_{new}^{ab}=0\\
+T_{new}^{ab}=T_{new}^{ba}
+\]</span> <span
+class="math inline">\(T_{new}^{ab}\)</span>是修改后的正则能动张量，称为<strong>能动张量</strong>。其守恒性保持不变，并改善了对称性性质。它在物理学中一些更深入的领域有广泛应用，我们先不进行更进一步的讨论了。</p>
+<h2 id="诺特定理的意义">诺特定理的意义</h2>
+<blockquote>
+<p>纯数学，某种意义上，堪称逻辑思想的诗篇。人们致力于探寻最普遍的运算理念，力求以简洁、合乎逻辑且统一的形式，将尽可能广泛的形式关系涵盖其中。在追求这种逻辑之美的过程中，人们发现了那些对于深入洞察自然规律至关重要的精神准则。</p>
+<p>——爱因斯坦悼念诺特的文章</p>
+</blockquote>
+<p>诺特定理的意义并不止于“从对称性得到守恒律”这一技术性结论，它更深层地改变了我们理解物理规律的方式。从物理学发展的角度看，诺特定理的影响是结构性的：它不仅仅是“增加了一条定理”，而是重新组织了整个理论构建方式。在它之前，守恒量往往被视为经验事实或独立假设；而在诺特定理之后，它们被统一为连续对称性的必然结果。时间平移对应能量守恒，空间平移对应动量守恒，旋转对称对应角动量守恒。这些看似彼此独立的定律，被纳入同一结构之中：物理规律的“不可变性”决定了可观测量的“守恒性”。更重要的是，诺特定理揭示了一个结构性观点：物理理论的核心不在于具体形式的方程，而在于作用量或动力学结构所承载的对称性。从方法论上看，诺特定理改变了物理学的工作方式：它使“寻找对称性”成为构建理论的核心策略之一，而不再只是事后验证的性质。现代物理中的许多进展都体现了这一点：对称性不仅约束理论，而且生成理论。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%89%A9%E7%90%86/" class="category-chain-item">物理</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E7%89%A9%E7%90%86%E5%AD%A6%E7%AE%80%E8%BF%B0/" class="print-no-link">#物理学简述</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>力学-2 对称性与守恒律</div>
+      <div>https://l-lllll-06.github.io/2026/06/23/力学-2 对称性与守恒律/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>-L_LLLLL-</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>June 23, 2026</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2026/06/19/%E5%8A%9B%E5%AD%A6-1%20%E2%80%9C%E5%8E%9F%E7%90%86%E2%80%9D%E4%B8%8E%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%96%B9%E7%A8%8B/" title="力学-1 “原理”与动力学方程">
+                        <span class="hidden-mobile">力学-1 “原理”与动力学方程</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script><!-- hexo injector body_end end --></body>
+</html>
