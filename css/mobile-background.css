@@ -1,0 +1,43 @@
+#web_bg.blog-background-ready {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: var(--blog-background-image);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+@media (max-width: 767.98px) {
+  #web_bg.blog-background-ready {
+    background-image: none;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  #web_bg.blog-background-ready::before {
+    content: "";
+    position: absolute;
+    inset: -30px;
+    background-image: var(--blog-background-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(22px) brightness(.65);
+    transform: scale(1.05);
+  }
+
+  #web_bg.blog-background-ready::after {
+    content: "";
+    position: absolute;
+    top: calc(80px + env(safe-area-inset-top, 0px));
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: var(--blog-background-image);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+  }
+}

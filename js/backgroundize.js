@@ -1,11 +1,15 @@
-document
-  .querySelector('#web_bg')
-  .setAttribute('style', `background-image: ${document.querySelector('.banner').style.background.split(' ')[0]};position: fixed;width: 100%;height: 100%;z-index: -1;background-size: cover;`);
+'use strict';
 
-document
-  .querySelector("#banner")
-  .setAttribute('style', 'background-image: url()')
+(() => {
+  const background = document.querySelector('#web_bg');
+  const banner = document.querySelector('#banner');
+  if (!background || !banner) return;
+  const image = banner.style.backgroundImage || getComputedStyle(banner).backgroundImage;
+  if (!image || image === 'none') return;
 
-document
-  .querySelector("#banner .mask")
-  .setAttribute('style', 'background-color:rgba(0,0,0,0)')
+  background.style.setProperty('--blog-background-image', image);
+  background.classList.add('blog-background-ready');
+  banner.style.backgroundImage = 'none';
+  const mask = banner.querySelector('.mask');
+  if (mask) mask.style.backgroundColor = 'transparent';
+})();
