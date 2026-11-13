@@ -1,0 +1,5 @@
+.physics-references { margin-top: 2rem; }
+.physics-references .csl-entry { margin-bottom: .65em; overflow-wrap: anywhere; }
+.physics-references .csl-entry::after { content: ''; display: block; clear: both; }
+.physics-references .csl-left-margin { float: left; min-width: 2.5em; }
+.physics-references .csl-right-inline { margin-left: 2.5em; }
