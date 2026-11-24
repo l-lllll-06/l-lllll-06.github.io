@@ -1,0 +1,39 @@
+/* Readability over busy banner / background images. */
+
+/* Soft dark scrim behind the banner: darker at the top (navbar) and around the title.
+   backgroundize.js clears .mask's background-color, so the scrim uses background-image. */
+.banner .mask {
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, .3) 0, rgba(0, 0, 0, 0) 6rem),
+    radial-gradient(ellipse 60% 45% at 50% 50%, rgba(0, 0, 0, .38) 0, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Title, subtitle and post meta on the banner */
+.banner-text,
+.banner-text .typed-cursor {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .55), 0 2px 12px rgba(0, 0, 0, .45);
+}
+
+/* Navbar text while it is transparent over the banner (before scrolling) */
+.navbar:not(.top-nav-collapse) .navbar-brand,
+.navbar:not(.top-nav-collapse) .nav-link,
+.navbar:not(.top-nav-collapse) .bilingual-separator {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6), 0 0 10px rgba(0, 0, 0, .35);
+}
+
+/* Frosted-glass navbar: no hard shadow while transparent over the banner,
+   a hairline edge and soft shadow once it turns into glass on scroll. */
+.navbar.scrolling-navbar {
+  transition: background .4s ease-in-out, padding .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.navbar:not(.top-nav-collapse):not(.navbar-col-show) {
+  box-shadow: none;
+}
+
+.navbar.top-nav-collapse {
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  backdrop-filter: blur(12px) saturate(140%);
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, .12);
+}

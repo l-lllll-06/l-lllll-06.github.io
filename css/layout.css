@@ -1,0 +1,36 @@
+/* Slightly wider article board. */
+
+/* Less inner padding inside the board (theme default: 10% each side) */
+@media (min-width: 768px) {
+  .post-content {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+/* Tablet widths: let the board use more of the screen than Bootstrap's 720px container */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #board-ctn {
+    max-width: 92%;
+  }
+}
+
+/* Desktop: main column 70% instead of 66.7%, side columns (TOC) 15% instead of 16.7% */
+@media (min-width: 992px) {
+  .row > .side-col.col-lg-2 {
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+
+  .row > .side-col.col-lg-2 + .col-lg-8 {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+}
+
+/* Keep anchor targets (headings, reference entries) clear of the fixed navbar */
+.markdown-body h1, .markdown-body h2, .markdown-body h3,
+.markdown-body h4, .markdown-body h5, .markdown-body h6,
+.physics-references .csl-entry {
+  scroll-margin-top: 80px;
+}
