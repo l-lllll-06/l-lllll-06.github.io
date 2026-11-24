@@ -34,3 +34,18 @@
 .physics-references .csl-entry {
   scroll-margin-top: 80px;
 }
+
+/* KaTeX display math: never wrap inside a formula; scroll sideways when it is
+   wider than the board (the post container clips overflow on small screens). */
+.markdown-body .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: .15em 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fluid sets `.katex { white-space: pre-wrap !important }` so inline math can wrap;
+   keep that for inline math but not for display formulas. */
+.markdown-body .katex-display > .katex {
+  white-space: nowrap !important;
+}
