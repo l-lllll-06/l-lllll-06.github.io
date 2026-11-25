@@ -1,7 +1,7 @@
 'use strict';
 
 // Margin notes on wide screens: each citation [n] and footnote mark gets its reference entry /
-// footnote text in the right margin, level with the line it is cited on (notes that would
+// footnote text in the left margin, level with the line it is cited on (notes that would
 // overlap are pushed down). Below the width set in css/reading.css (`--sidenotes-min`)
 // the notes are hidden and js/ref-preview.js shows its hover cards as before.
 // The column is rendered by src/components/Post.astro for articles with citations or footnotes.
