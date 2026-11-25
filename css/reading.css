@@ -88,7 +88,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: .8rem;
-  margin: 2.2rem 0 1rem;
+  margin: 1.2rem 0 .5rem;
 }
 .series-pager a {
   display: flex;
