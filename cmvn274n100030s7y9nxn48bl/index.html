@@ -77,6 +77,7 @@
 <link rel="stylesheet" href="/css/cloudedGlass.css">
 <link rel="stylesheet" href="/css/contrast.css">
 <link rel="stylesheet" href="/css/layout.css">
+<link rel="stylesheet" href="/css/reading.css">
 
 
 
@@ -96,7 +97,8 @@
 
 
   
-<!-- hexo injector head_end start --><link rel="stylesheet" href="/css/citations.css"><link rel="stylesheet" href="/css/mobile-background.css?v=20261025-appearance-1"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="canonical" href="https://blog.l-l.me.uk/cmvn274n100030s7y9nxn48bl/" data-bilingual="canonical">
+<!-- hexo injector head_end start --><link rel="stylesheet" href="/css/citations.css"><link rel="stylesheet" href="/css/mobile-background.css?v=20261025-appearance-1"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/lib/lxgw-wenkai/lxgwwenkaigbscreen.css">
+<link rel="canonical" href="https://blog.l-l.me.uk/cmvn274n100030s7y9nxn48bl/" data-bilingual="canonical">
 <link rel="alternate" hreflang="zh-CN" href="https://blog.l-l.me.uk/cmvn274n100030s7y9nxn48bl/" data-bilingual="alternate">
 <link rel="alternate" hreflang="en" href="https://blog.l-l.me.uk/en/mechanics-02/" data-bilingual="alternate">
 <link rel="alternate" hreflang="x-default" href="https://blog.l-l.me.uk/cmvn274n100030s7y9nxn48bl/" data-bilingual="alternate">
@@ -284,14 +286,14 @@
             
               <div class="markdown-body">
                 
-                <h1>力学-2 对称性与守恒律</h1>
+                <h1>力学-2 对称性与守恒律</h1><nav class="series-box" aria-label="力学"><details><summary><span class="series-heading">「力学」系列 · 第 2 篇 / 共 3 篇</span><span class="series-toggle">系列目录</span></summary><ol><li><a href="/cmvn274mz00020s7y8cnm1r5c/">力学-1 “原理”与动力学方程</a></li><li class="series-current" aria-current="page"><span>力学-2 对称性与守恒律</span><span class="series-note">（本文）</span></li><li><a href="/cmvn274n300070s7yb3d29f42/">力学-3 辛形式与哈密顿力学</a></li></ol></details></nav>
 <p>上一篇，我们以最小作用量原理为基础，逐步建立了经典力学的基本框架。我们对作用量取变分，得到欧拉—拉格朗日方程，再借助惯性系的性质，确定了自由质点的拉格朗日量。动量、势能和力也由此进入我们的讨论，牛顿三定律则从动力学方程中依次导出。沿着这条线索，守恒律也渐渐显露出来。自由质点的拉格朗日量不显含位置坐标，因此动量守恒。把视野从单个质点推向整个封闭系统，我们又看到，系统的总动量同样守恒。这些结果把我们带回上一篇留下的问题。要追究守恒律的由来，我们需要从具体的运动方程转向<strong>对称性</strong>。正是在这个更广阔的视野中，那些原本看似互相毫无关联的守恒律，显露出它们了共同的根源。</p>
 <h2 id="对称性与守恒律">对称性与守恒律</h2>
 <blockquote>
 <p>“无论人们赋予“对称”多么宽广或狭窄的含义，它始终是人类在漫长岁月中用来理解和创造秩序、美和完美的一种思想。“</p>
 <p>——《对称》（据原文节译）<span class="citation" data-cites="weylSymmetry1952"><a href="#ref-weylSymmetry1952" role="doc-biblioref">[1]</a></span></p>
 </blockquote>
-<p>在日常语言中，“对称”往往让人想到均衡、协调与美感。它广泛存在于自然界，也作为一种美学准则影响着艺术与建筑。在物理学中，对称性可以通过变换来刻画。例如，把一个正方形绕中心旋转 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>90</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">90^\circ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6741em;"></span><span class="mord">9</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6741em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∘</span></span></span></span></span></span></span></span></span></span></span>，或沿它的一条对称轴作反射，得到的图形都与原图形重合。换言之，**对称性描述的是事物在某种变换下保持不变的性质。**这种不变性也体现在自然规律中。例如，在惯性系中，自由质点做匀速直线运动。将它的整条运动轨迹作空间平移，或改变计时的起点，描述其运动的方程仍具有相同的形式。</p>
+<p>在日常语言中，“对称”往往让人想到均衡、协调与美感。它广泛存在于自然界，也作为一种美学准则影响着艺术与建筑。在物理学中，对称性可以通过变换来刻画。例如，把一个正方形绕中心旋转 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>90</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">90^\circ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6741em;"></span><span class="mord">9</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6741em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∘</span></span></span></span></span></span></span></span></span></span></span>，或沿它的一条对称轴作反射，得到的图形都与原图形重合。换言之，<strong>对称性描述的是事物在某种变换下保持不变的性质。</strong>这种不变性也体现在自然规律中。例如，在惯性系中，自由质点做匀速直线运动。将它的整条运动轨迹作空间平移，或改变计时的起点，描述其运动的方程仍具有相同的形式。</p>
 <p>从数学上看，对称性必须通过“变换”来定义。考虑坐标变换<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>a</mi></msup><mo>→</mo><msup><mi>x</mi><mi>a</mi></msup><mo>−</mo><mi>δ</mi><msup><mi>x</mi><mi>a</mi></msup></mrow><annotation encoding="application/x-tex">x^a\rightarrow x^a-\delta x^a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6644em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7477em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span></span></span></span></span></span></span></span>下的场<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\varphi(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">φ</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span>。</p>
 <blockquote>
 <p>坐标变换使用负号，为的是坐标变换后<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mi>φ</mi></mrow><annotation encoding="application/x-tex">\delta\varphi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span><span class="mord mathnormal">φ</span></span></span></span>为正号。这里参考Tong的讲义 <span class="citation" data-cites="tongQuantumFieldTheory2006"><a href="#ref-tongQuantumFieldTheory2006" role="doc-biblioref">[2]</a></span></p>
@@ -341,7 +343,7 @@ J^a:=\frac{\partial\mathscr{L}}{\partial(\partial_a\varphi)}\delta\varphi-f^a
 <blockquote>
 <p>一旦选定了坐标系，就可以使用具体指标。</p>
 </blockquote>
-<p>这就是著名的<strong>诺特定理</strong>，它表明，<strong>作用量的每个连续全局变分对称性都对应一个诺特流；当场满足运动方程时，这个流的散度为零。<strong>诺特定理是理论物理学的中心结论之一，它表示了</strong>对于任意一个连续对称性，总有与其相应的守恒定律。 <span class="citation" data-cites="noetherInvarianteVariationsprobleme1918"><a href="#ref-noetherInvarianteVariationsprobleme1918" role="doc-biblioref">[3]</a></span>。</strong></p>
+<p>这就是著名的<strong>诺特定理</strong>，它表明，<strong>作用量的每个连续全局变分对称性都对应一个诺特流；当场满足运动方程时，这个流的散度为零。</strong>诺特定理是理论物理学的中心结论之一，它表示了<strong>对于任意一个连续对称性，总有与其相应的守恒定律。 <span class="citation" data-cites="noetherInvarianteVariationsprobleme1918"><a href="#ref-noetherInvarianteVariationsprobleme1918" role="doc-biblioref">[3]</a></span>。</strong></p>
 <blockquote>
 <p>埃米·诺特，德国数学家。多位知名学者将她誉为历史上最杰出的女性数学家。在物理方面，她所证明的诺特定理揭示了对称性和守恒律之间的紧密联系，是现代物理学发展历程中最重要的定理之一。<span class="citation" data-cites="AiMiNuoTe2026"><a href="#ref-AiMiNuoTe2026" role="doc-biblioref">[4]</a></span></p>
 </blockquote>
@@ -618,7 +620,7 @@ B^{cab}=-B^{acb}\\
 <p>诺特定理的意义远不止为理论物理增加了一条结论，它更深层地改变了我们理解物理规律的方式。在它之前，守恒量往往被视为经验事实；而在诺特定理之后，它们被统一为连续对称性的必然结果。时间平移对称性对应能量守恒，空间平移对称性对应动量守恒，空间旋转对称性对应动量矩守恒。对称性，就这样与物质运动中的守恒量联系在了一起。</p>
 <p>诺特定理也改变了物理学家建立理论的方式。给定一个理论，我们可以从它的对称性出发，在求解运动方程之前就知道有哪些量守恒。建立新理论时，我们也可以沿相反的方向思考，先判断它具有什么样的对称性，再据此判断作用量中可以出现哪些项。从解释经典力学中的守恒律，到约束基本相互作用的理论，对称性逐渐成了物理学家建立理论的出发点。<strong>从方法论上看，诺特定理改变了物理学的工作方式：它使“寻找对称性”成为构建理论的核心策略之一。</strong></p>
 
-<section class="physics-references"><h2 id="references">参考文献</h2>
+<nav class="series-pager" aria-label="力学"><a class="series-prev" href="/cmvn274mz00020s7y8cnm1r5c/"><small>← 系列上一篇</small><span>力学-1 “原理”与动力学方程</span></a><a class="series-next" href="/cmvn274n300070s7yb3d29f42/"><small>系列下一篇 →</small><span>力学-3 辛形式与哈密顿力学</span></a></nav><section class="physics-references"><h2 id="references">参考文献</h2>
 <div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-weylSymmetry1952" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[1] </div><div class="csl-right-inline">H. Weyl, <em>Symmetry</em>. Princeton University Press, 1952. doi: <a target="_blank" rel="noopener" href="https://doi.org/10.1515/9781400874347">10.1515/9781400874347</a>.</div>
@@ -999,6 +1001,10 @@ B^{cab}=-B^{acb}\\
   <script  src="/js/local-search.js" ></script>
 
 
+
+
+  
+<script src="/js/ref-preview.js"></script>
 
 
 

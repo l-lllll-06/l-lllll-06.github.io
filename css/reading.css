@@ -1,0 +1,124 @@
+/* ---- Citation / footnote preview card (source/js/ref-preview.js) ---- */
+.ref-preview {
+  position: absolute;
+  z-index: 1050;
+  max-width: min(28rem, calc(100vw - 16px));
+  padding: .7rem .9rem .55rem;
+  font-size: .875rem;
+  line-height: 1.55;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, .94);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(127, 127, 127, .25);
+  border-radius: 8px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .22);
+  overflow-wrap: anywhere;
+}
+.ref-preview[hidden] { display: none; }
+[data-user-color-scheme="dark"] .ref-preview { background: rgba(28, 30, 34, .94); }
+.ref-preview .csl-left-margin { float: left; min-width: 2.2em; }
+.ref-preview .csl-right-inline { margin-left: 2.2em; }
+.ref-preview .ref-preview-body > p { margin: 0; }
+.ref-preview .ref-preview-foot {
+  margin-top: .45rem;
+  padding-top: .35rem;
+  border-top: 1px solid rgba(127, 127, 127, .2);
+  font-size: .8rem;
+  text-align: right;
+}
+
+/* Citation marks are jump targets for the back-links: keep them clear of the fixed navbar */
+.markdown-body a[role="doc-biblioref"],
+.markdown-body .footnote-ref a {
+  scroll-margin-top: 120px;
+}
+
+/* Back-links in the reference list */
+.physics-references .ref-backlink {
+  margin-left: .15em;
+  font-size: .85em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Briefly highlight where a jump lands */
+.markdown-body :target,
+.markdown-body .csl-entry:target {
+  animation: ref-target-flash 1.6s ease-out;
+  border-radius: 4px;
+}
+@keyframes ref-target-flash {
+  from { background-color: rgba(255, 200, 60, .35); }
+  to   { background-color: transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .markdown-body :target { animation: none; }
+}
+
+/* ---- Series navigation (scripts/series.js) ---- */
+.series-box {
+  margin: 0 0 1.6rem;
+  border: 1px solid rgba(127, 127, 127, .28);
+  border-left: 3px solid var(--link-hover-color, #30a9de);
+  border-radius: 6px;
+  background: rgba(127, 127, 127, .06);
+}
+.series-box summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .2rem 1rem;
+  padding: .6rem .9rem;
+  cursor: pointer;
+  list-style: none;
+}
+.series-box summary::-webkit-details-marker { display: none; }
+.series-heading { font-weight: 700; }
+.series-toggle { font-size: .85em; color: var(--sec-text-color); }
+.series-toggle::after { content: ' ▾'; }
+.series-box details[open] .series-toggle::after { content: ' ▴'; }
+.series-box ol { margin: 0; padding: 0 .9rem .7rem 2.4rem; }
+.series-box li { margin: .15rem 0; }
+.series-current { font-weight: 700; }
+.series-note { font-weight: 400; color: var(--sec-text-color); font-size: .9em; }
+
+.series-pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .8rem;
+  margin: 2.2rem 0 1rem;
+}
+.series-pager a {
+  display: flex;
+  flex-direction: column;
+  padding: .7rem .9rem;
+  border: 1px solid rgba(127, 127, 127, .28);
+  border-radius: 6px;
+  text-decoration: none;
+}
+.series-pager a:hover { background: rgba(127, 127, 127, .08); }
+.series-pager small { color: var(--sec-text-color); }
+.series-pager .series-next { text-align: right; grid-column: 2; }
+@media (max-width: 575px) {
+  .series-pager { grid-template-columns: 1fr; }
+  .series-pager .series-next { grid-column: 1; }
+  .series-pager > span:empty { display: none; }
+}
+
+/* ---- Equation cross-references (plugins/markdown-it-katex.cjs) ---- */
+.markdown-body .katex-block[id] { scroll-margin-top: 100px; }
+.markdown-body a.eqref { white-space: nowrap; }
+.ref-preview .ref-preview-eq { overflow-x: auto; overflow-y: hidden; padding: .15em 0; }
+.ref-preview .ref-preview-eq .katex { white-space: nowrap !important; } /* override Fluid pre-wrap so the card sizes to the formula */
+.ref-preview .ref-preview-eq .katex-display { margin: .2em 0; overflow: visible; }
+/* the number is shown in the card footer instead (KaTeX positions it absolutely) */
+.ref-preview .ref-preview-eq .tag { display: none; }
+
+/* ---- Chinese body font: LXGW WenKai Screen (scripts/lxgw-wenkai.js) ---- */
+html[lang^="zh"] .markdown-body,
+html[lang^="zh"] .ref-preview {
+  font-family: "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
