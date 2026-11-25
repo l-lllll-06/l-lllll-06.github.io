@@ -1,3 +1,9 @@
+/* The banner image is shown on #web_bg instead (js/backgroundize.js); hide the banner's own copy.
+   !important beats the inline style, which stays in place for Fluid to read. */
+#banner.blog-banner-moved {
+  background-image: none !important;
+}
+
 #web_bg.blog-background-ready {
   position: fixed;
   inset: 0;
