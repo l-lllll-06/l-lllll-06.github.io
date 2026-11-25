@@ -161,3 +161,184 @@ html[lang^="zh"] .collection-panel {
   font-family: "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
 }
+/* ---- Margin notes on wide screens (js/sidenotes.js) ---- */
+.sidenotes { display: none; }
+html[lang^="zh"] .sidenote { font-family: "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+@media (min-width: 1200px) {
+  /* Articles with notes: equal side columns, a little wider than the default 15%. */
+  .row.has-sidenotes > .side-col.col-lg-2 { flex: 0 0 19%; max-width: 19%; }
+  .row.has-sidenotes > .side-col.col-lg-2 + .col-lg-8 { flex: 0 0 62%; max-width: 62%; }
+  .has-sidenotes .sidenotes {
+    display: block;
+    position: absolute;
+    inset: 0 1.25rem 0 -.25rem;
+  }
+  .sidenote {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: .55rem .7rem;
+    font-size: .8rem;
+    line-height: 1.55;
+    color: var(--text-color);
+    background-color: var(--board-bg-color);
+    -webkit-backdrop-filter: blur(var(--background-blur, 10px));
+    backdrop-filter: blur(var(--background-blur, 10px));
+    border-left: 2px solid rgba(127, 127, 127, .35);
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+    transition: border-color .15s ease, box-shadow .15s ease;
+  }
+  .sidenote-item + .sidenote-item { margin-top: .4rem; }
+  .sidenote .csl-left-margin,
+  .sidenote .sidenote-number { float: left; min-width: 2em; font-weight: 700; color: var(--sec-text-color); }
+  .sidenote .csl-right-inline,
+  .sidenote .sidenote-item > p { margin: 0 0 0 2em; }
+  .sidenote.sidenote-hover { border-left-color: var(--link-hover-color, #30a9de); box-shadow: 0 2px 10px rgba(0, 0, 0, .15); }
+  .markdown-body .sidenote-hover a { background-color: rgba(48, 169, 222, .15); border-radius: 3px; }
+}
+
+/* ---- Table of contents on phones and tablets (js/mobile-toc.js) ---- */
+.toc-fab {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  z-index: 1040;
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  padding: .5rem .85rem;
+  font-size: .9rem;
+  color: var(--text-color);
+  background-color: var(--board-bg-color);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(127, 127, 127, .3);
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .2);
+  opacity: 0;
+  transform: translateY(1rem);
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.toc-fab.is-visible { opacity: 1; transform: none; pointer-events: auto; }
+.toc-fab .iconfont { font-size: 1.05rem; }
+.toc-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1045;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding: .3rem 0 env(safe-area-inset-bottom);
+  color: var(--text-color);
+  background: rgba(255, 255, 255, .97);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-radius: 14px 14px 0 0;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, .3);
+}
+[data-user-color-scheme="dark"] .toc-sheet { background: rgba(28, 30, 34, .97); }
+.toc-sheet[hidden] { display: none; }
+html.toc-sheet-open body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1044;
+  background: rgba(0, 0, 0, .35);
+}
+.toc-sheet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .4rem 1.1rem .5rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(127, 127, 127, .2);
+}
+.toc-sheet-close {
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 0 .3rem;
+  color: var(--sec-text-color);
+  background: none;
+  border: 0;
+}
+.toc-sheet-list {
+  list-style: none;
+  margin: 0;
+  padding: .4rem .6rem 1rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.toc-sheet-list a {
+  display: block;
+  padding: .45rem .6rem;
+  color: var(--text-color);
+  border-radius: 6px;
+  text-decoration: none;
+}
+.toc-sheet-list a:active { background: rgba(127, 127, 127, .12); }
+.toc-sheet-list .toc-sheet-level-1 a { padding-left: 1.6rem; font-size: .95em; }
+.toc-sheet-list .toc-sheet-level-2 a { padding-left: 2.6rem; font-size: .9em; color: var(--sec-text-color); }
+.toc-sheet-list .is-current > a { font-weight: 700; color: var(--link-hover-color, #30a9de); background: rgba(48, 169, 222, .1); }
+html[lang^="zh"] .toc-sheet { font-family: "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+/* Desktop has the sidebar contents; print has none. */
+@media (min-width: 992px) { .toc-fab, .toc-sheet { display: none !important; } }
+@media print { .toc-fab, .toc-sheet { display: none !important; } }
+/* With margin notes on the right, the "back to top" button moves to the left column. */
+@media (min-width: 1200px) {
+  html.sidenotes-on #scroll-top-button { right: auto !important; left: 1.5rem; }
+}
+
+/* ---- Home page: collections overview and section titles (src/components/HomeCollections.astro) ---- */
+.home-section-title {
+  margin: 1.6rem 0 .9rem;
+  padding-bottom: .4rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(127, 127, 127, .25);
+}
+.home-collections .home-section-title { margin-top: .4rem; }
+.home-collection {
+  margin-bottom: 1.2rem;
+  padding: .9rem 1.1rem 1rem;
+  border: 1px solid rgba(127, 127, 127, .25);
+  border-left: 3px solid var(--link-hover-color, #30a9de);
+  border-radius: 8px;
+}
+.home-collection-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .2rem 1rem;
+  margin-bottom: .5rem;
+}
+.home-collection-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.home-collection-meta { font-size: .85rem; color: var(--sec-text-color); }
+.home-series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: .4rem 1.5rem;
+}
+.home-series-name {
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--sec-text-color);
+  margin-bottom: .15rem;
+}
+.home-series-list {
+  margin: 0;
+  padding-left: 1.6rem;
+}
+.home-series-list li { margin: .2rem 0; }
+.home-series-list a { color: var(--text-color); }
+.home-series-list a:hover { color: var(--link-hover-color, #30a9de); }
+/* Inline formulas in card summaries keep the line height. */
+.index-excerpt .katex { font-size: 1em; line-height: 1; }

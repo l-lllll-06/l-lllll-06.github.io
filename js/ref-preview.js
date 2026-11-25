@@ -101,6 +101,8 @@
   }
 
   function show(a) {
+    // Wide screens show citations and footnotes as margin notes (js/sidenotes.js).
+    if (document.documentElement.classList.contains('sidenotes-on') && !a.matches('a.eqref, .katex a')) return;
     clearTimeout(hideTimer);
     if (current === a && !card.hidden) return;
     const content = contentFor(a);
