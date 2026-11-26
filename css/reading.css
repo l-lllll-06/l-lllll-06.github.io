@@ -338,3 +338,31 @@ html[lang^="zh"] .toc-sheet { font-family: "LXGW WenKai Screen", -apple-system, 
 .home-series-list a:hover { color: var(--link-hover-color, #30a9de); }
 /* Inline formulas in card summaries keep the line height. */
 .index-excerpt .katex { font-size: 1em; line-height: 1; }
+
+/* ---- Collection reading progress (js/reading-progress.js) ---- */
+li.is-read::after {
+  content: "✓\FE0E";
+  margin-left: .35em;
+  font-size: .85em;
+  font-weight: 400;
+  color: #3fa66a;
+}
+.read-progress {
+  display: inline-block;
+  margin-left: .6em;
+  padding: 0 .5em;
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--sec-text-color);
+  border: 1px solid rgba(127, 127, 127, .35);
+  border-radius: 1em;
+  vertical-align: .08em;
+}
+.read-progress[hidden] { display: none; }
+.read-progress.is-complete { color: #3fa66a; border-color: rgba(63, 166, 106, .5); }
+.read-sentinel { height: 1px; }
+
+/* The formula a link points to (e.g. a cross-article \eqref) is briefly highlighted. */
+.katex-block:target { animation: eq-target 2.4s ease-out; border-radius: 6px; }
+@keyframes eq-target { from { background: rgba(48, 169, 222, .22); } to { background: transparent; } }

@@ -9,11 +9,12 @@
   if (!body) return;
   const zh = /^zh/i.test(document.documentElement.lang || '');
   const T = zh
-    ? { back: '返回正文引用处', jump: '跳到参考文献', jumpNote: '跳到脚注', jumpEq: '跳到公式', close: '关闭' }
-    : { back: 'Back to citation', jump: 'Go to reference', jumpNote: 'Go to footnote', jumpEq: 'Go to equation', close: 'Close' };
+    ? { back: '返回正文引用处', jump: '跳到参考文献', jumpNote: '跳到脚注', jumpEq: '跳到公式', openEq: '打开', close: '关闭' }
+    : { back: 'Back to citation', jump: 'Go to reference', jumpNote: 'Go to footnote', jumpEq: 'Go to equation', openEq: 'Open', close: 'Close' };
 
   // citations, footnote marks, and \eqref links (plain-text and inside formulas)
-  const refSelector = 'a[role="doc-biblioref"], sup.footnote-ref > a, a.eqref, .katex a[href^="#eq-"]';
+  // (a[data-xref]: \eqref to a formula in another article, its copy is in .xref-sources)
+  const refSelector = 'a[role="doc-biblioref"], sup.footnote-ref > a, a.eqref, .katex a[href^="#eq-"], .katex a[data-xref]';
   const refs = [...body.querySelectorAll(refSelector)];
   if (!refs.length) return;
 
@@ -57,7 +58,27 @@
   let showTimer = 0;
   const touch = window.matchMedia('(hover: none)').matches;
 
+  function crossContentFor(a) {
+    const source = document.getElementById(`xref-src-${a.dataset.xref}`);
+    if (!source) return null;
+    const box = document.createElement('div');
+    box.className = 'ref-preview-body ref-preview-eq';
+    const formula = source.firstElementChild ? source.firstElementChild.cloneNode(true) : document.createTextNode('');
+    if (formula.querySelectorAll) formula.querySelectorAll('a[href]').forEach(link => link.removeAttribute('href'));
+    box.append(formula);
+    const foot = document.createElement('div');
+    foot.className = 'ref-preview-foot';
+    const jump = document.createElement('a');
+    jump.href = a.href;
+    jump.textContent = `${T.openEq} ${source.dataset.label || ''} →`;
+    foot.append(jump);
+    const frag = document.createDocumentFragment();
+    frag.append(box, foot);
+    return frag;
+  }
+
   function contentFor(a) {
+    if (a.dataset.xref !== undefined) return crossContentFor(a);
     const id = decodeURIComponent((a.getAttribute('href') || '').slice(1));
     const target = id && document.getElementById(id);
     if (!target) return null;
