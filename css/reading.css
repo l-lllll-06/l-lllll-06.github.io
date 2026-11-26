@@ -361,7 +361,6 @@ li.is-read::after {
 }
 .read-progress[hidden] { display: none; }
 .read-progress.is-complete { color: #3fa66a; border-color: rgba(63, 166, 106, .5); }
-.read-sentinel { height: 1px; }
 
 /* The formula a link points to (e.g. a cross-article \eqref) is briefly highlighted. */
 .katex-block:target { animation: eq-target 2.4s ease-out; border-radius: 6px; }

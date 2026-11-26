@@ -1,8 +1,8 @@
 'use strict';
 
 // Collection reading progress, kept only in this browser (localStorage "blog-read").
-// An article counts as read once its end has been on screen (either language version:
-// the key is the article folder). Lists mark read articles with [data-read-key] → .is-read,
+// An article counts as read once the reader has scrolled to (or past) its end (either
+// language version: the key is the article folder). Lists mark read articles with [data-read-key] → .is-read,
 // and [data-read-progress="<keys>"] shows "已读 2 / 3" / "2 of 3 read".
 (() => {
   const STORE = 'blog-read';
@@ -27,31 +27,32 @@
     document.querySelectorAll('[data-read-progress]').forEach(el => {
       const keys = el.dataset.readProgress.split(/\s+/).filter(Boolean);
       const n = keys.filter(k => read[k]).length;
-      el.hidden = n === 0;
-      el.textContent = n ? label(n, keys.length) : '';
+      el.hidden = false;
+      el.textContent = label(n, keys.length);
       el.classList.toggle('is-complete', n === keys.length);
     });
   }
 
+  // Checked on every scroll (not an IntersectionObserver), so jumping past the end with
+  // the End key, the contents or a fast fling still counts.
   function watchArticle() {
     const article = document.querySelector('article[data-read-key]');
     const body = article && article.querySelector('.markdown-body');
-    if (!body || !('IntersectionObserver' in window)) return;
+    if (!body) return;
     const key = article.dataset.readKey;
     if (load()[key]) return;
-    const end = document.createElement('div');
-    end.className = 'read-sentinel';
-    end.setAttribute('aria-hidden', 'true');
-    body.after(end);
-    const observer = new IntersectionObserver(entries => {
-      if (!entries.some(e => e.isIntersecting)) return;
-      observer.disconnect();
+    const check = () => {
+      if (body.getBoundingClientRect().bottom > window.innerHeight || window.innerHeight === 0) return;
+      window.removeEventListener('scroll', check);
+      window.removeEventListener('resize', check);
       const read = load();
       read[key] = Date.now();
       save(read);
       decorate();
-    });
-    observer.observe(end);
+    };
+    window.addEventListener('scroll', check, { passive: true });
+    window.addEventListener('resize', check);
+    check();
   }
 
   const init = () => { decorate(); watchArticle(); };
