@@ -366,24 +366,10 @@ li.is-read::after {
 .katex-block:target { animation: eq-target 2.4s ease-out; border-radius: 6px; }
 @keyframes eq-target { from { background: rgba(48, 169, 222, .22); } to { background: transparent; } }
 
-/* Planned series under a collection (site.config.mjs: series.<collection>.planned). */
-.home-planned {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: .3rem .6rem;
-  margin-top: .7rem;
-  padding-top: .6rem;
-  border-top: 1px dashed rgba(127, 127, 127, .3);
-  font-size: .9rem;
-  color: var(--sec-text-color);
-}
-.home-planned-label { font-weight: 700; }
-.home-planned-list { display: contents; list-style: none; margin: 0; padding: 0; }
-.home-planned-list li { opacity: .75; }
-.home-planned-list li:not(:last-child)::after { content: " ·"; }
-/* "All articles" link under the latest-articles list. */
-.home-all-link { display: block; text-align: right; margin: .2rem .5rem 1rem; font-size: .95rem; }
+/* Banner credit under an article's tags (front matter `banner_credit`). */
+.banner-credit { margin: .4rem 0 0; font-size: .85rem; color: var(--sec-text-color); }
+.banner-credit span { font-weight: 700; margin-right: .5em; }
+.banner-credit a { color: inherit; text-decoration: underline; text-decoration-color: rgba(127, 127, 127, .45); }
 
 /* "Start here" block on the home page (src/components/HomeIntro.astro). */
 .home-intro {
