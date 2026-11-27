@@ -1,0 +1,24 @@
+/* Key-result blocks: Markdown "> [!IMPORTANT]" (see lib/markdown.mjs). */
+.markdown-body blockquote.callout-key {
+  color: var(--post-text-color);
+  background-color: rgba(74, 127, 181, 0.08);
+  border-left: 0.25em solid #4a7fb5;
+  border-radius: 0 4px 4px 0;
+  padding: 0.6em 1em;
+  margin: 1.2em 0;
+}
+.markdown-body blockquote.callout-key::before {
+  content: "结论";
+  display: block;
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #4a7fb5;
+  margin-bottom: 0.3em;
+}
+.markdown-body blockquote.callout-key:lang(en)::before {
+  content: "Key result";
+}
+.markdown-body blockquote.callout-key > :last-child {
+  margin-bottom: 0;
+}

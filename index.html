@@ -61,6 +61,7 @@
 
   <link rel="stylesheet" href="/css/mobile-background.css?v=20261125-appearance-2">
   <link rel="stylesheet" href="/css/citations.css">
+  <link rel="stylesheet" href="/css/callouts.css">
   <meta name="generator" content="Astro v7.4.13">
   
   <link rel="alternate" type="application/rss+xml" title="-L_LLLLL- · RSS feed" href="/en/rss.xml">
@@ -137,7 +138,7 @@
     </div>
   </div>
 </nav>
-      <div id="banner" class="banner" parallax="true" style="background: url('https://l-lllll-06.github.io/picx-images-hosting/for-blog/2026-06-21_22.41.57.5trox7glnd.webp') no-repeat center center; background-size: cover;">
+      <div id="banner" class="banner" parallax="true" style="background: url('https://cdn.jsdelivr.net/gh/l-lllll-06/picx-images-hosting@master/for-blog/home-eso-36m-milky-way-4k.d2f355.webp') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -165,7 +166,39 @@
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
-                <section class="home-collections">
+                <section class="home-intro">
+    <figure class="home-quote" data-quotes="[{&quot;quote&quot;:[&quot;“What is an inertial system?”&quot;,&quot;“It is a c.s. in which the laws of mechanics are valid.”&quot;],&quot;source&quot;:&quot;The Evolution of Physics&quot;,&quot;short&quot;:&quot;Mechanics I&quot;,&quot;href&quot;:&quot;/en/mechanics-01/#Inertial-Frames&quot;},{&quot;quote&quot;:[&quot;“The fundamental laws can be put in the form of a principle of least action.”&quot;],&quot;source&quot;:&quot;The Feynman Lectures on Physics, Vol. II&quot;,&quot;short&quot;:&quot;Mechanics I&quot;,&quot;href&quot;:&quot;/en/mechanics-01/#The-%E2%80%9CPrinciple%E2%80%9D-and-Equations-of-Motion&quot;},{&quot;quote&quot;:[&quot;However broadly or narrowly we define symmetry, it “is one idea by which man through the ages has tried to comprehend and create order, beauty, and perfection.”&quot;],&quot;source&quot;:&quot;Symmetry&quot;,&quot;short&quot;:&quot;Mechanics II&quot;,&quot;href&quot;:&quot;/en/mechanics-02/#Symmetry-and-Conservation-Laws&quot;},{&quot;quote&quot;:[&quot;“Pure mathematics is, in its way, the poetry of logical ideas.” Einstein goes on to describe the search for general operations that gather as many formal relationships as possible into a simple, logical whole. In pursuing this logical beauty, mathematicians find conceptual tools that let us probe the laws of nature more deeply.&quot;],&quot;source&quot;:&quot;Einstein’s tribute to Noether&quot;,&quot;short&quot;:&quot;Mechanics II&quot;,&quot;href&quot;:&quot;/en/mechanics-02/#The-Significance-of-Noether%E2%80%99s-Theorem&quot;}]">
+        <blockquote class="home-quote-text"><p>“What is an inertial system?”</p><p>“It is a c.s. in which the laws of mechanics are valid.”</p></blockquote>
+        <figcaption class="home-quote-source">
+          ——<span class="home-quote-who">The Evolution of Physics</span>
+          <a class="home-quote-link" href="/en/mechanics-01/#Inertial-Frames">Mechanics I</a>
+        </figcaption>
+      </figure>
+    
+    
+    <div class="home-intro-actions" data-continue="[{&quot;key&quot;:&quot;mechanics-01&quot;,&quot;short&quot;:&quot;Mechanics I&quot;,&quot;title&quot;:&quot;Mechanics I: The “Principles” and Equations of Motion&quot;,&quot;path&quot;:&quot;/en/mechanics-01/&quot;},{&quot;key&quot;:&quot;mechanics-02&quot;,&quot;short&quot;:&quot;Mechanics II&quot;,&quot;title&quot;:&quot;Mechanics II: Symmetry and Conservation Laws&quot;,&quot;path&quot;:&quot;/en/mechanics-02/&quot;}]">
+      <a class="home-intro-btn home-intro-btn--primary" href="/en/mechanics-01/" title="Mechanics I: The “Principles” and Equations of Motion">Start with Mechanics I</a>
+      <a class="home-intro-btn" href="/en/about/">About this site</a>
+    </div>
+  </section>
+<script>
+  // Show a random epigraph (the server renders the first one, for readers without JavaScript).
+  (() => {
+    const box = document.querySelector('.home-quote[data-quotes]');
+    if (!box) return;
+    let list = [];
+    try { list = JSON.parse(box.dataset.quotes); } catch (e) { return; }
+    if (list.length < 2) return;
+    const q = list[Math.floor(Math.random() * list.length)];
+    const text = box.querySelector('.home-quote-text');
+    text.replaceChildren(...q.quote.map(line => { const p = document.createElement('p'); p.textContent = line; return p; }));
+    box.querySelector('.home-quote-who').textContent = q.source;
+    const link = box.querySelector('.home-quote-link');
+    link.textContent = q.short;
+    link.href = q.href;
+  })();
+</script>
+<section class="home-collections">
     <h2 class="home-section-title">Collections</h2>
     <div class="home-collection">
         <div class="home-collection-head">
@@ -180,6 +213,12 @@
               </ol>
             </div>
         </div>
+        <div class="home-planned">
+            <span class="home-planned-label">Planned</span>
+            <ul class="home-planned-list">
+              <li>Special Relativity</li><li>Electrodynamics</li><li>Thermodynamics and Statistical Physics</li><li>Quantum Mechanics</li><li>General Relativity</li>
+            </ul>
+          </div>
       </div>
   </section>
 <h2 class="home-section-title">Latest articles</h2>
@@ -199,7 +238,7 @@
 
         <a class="index-excerpt " href="/en/mechanics-02/" target="_self">
           <div>
-            In the previous article, we developed the basic framework of classical mechanics from the principle of least action. By varying the action, we obtained the Euler–Lagrange equations. We then used the properties of inertial frames to determine the Lagrangian of a free particle. This led us to momentum, potential energy, and force, and we derived Newton’s three laws in turn from the equations of motion. Along the way, we began to encounter conservation laws. The Lagrangian of a free particle has no explicit dependence on its position coordinates, so its momentum is conserved. Going from a single particle to a closed system, we found that the total momentum of the system is also conserved. These results bring us back to the question left open in the previous article. To see where conservation laws come from, we need to look beyond particular equations of motion and turn to <strong>symmetry</strong>. From that perspective, conservation laws that once seemed unrelated reveal a common origin.
+            What symmetry means, Noether’s theorem, and which symmetry lies behind each conservation law, ending with the energy–momentum tensor of field theory.
           </div>
         </a>
 
@@ -240,7 +279,7 @@
 
         <a class="index-excerpt " href="/en/mechanics-01/" target="_self">
           <div>
-            The <strong>inertial frame of reference</strong>, or <strong>inertial frame</strong> for short, provides the setting for mechanics and is a cornerstone of classical physics. An <strong>inertial frame</strong> is a frame of reference in which <strong>space can be described as homogeneous and isotropic, and time as homogeneous</strong>. Spatial homogeneity means that no position is privileged. Spatial isotropy means that no direction is privileged. Temporal homogeneity means that no instant is privileged. In other words, for an isolated system free from outside influences, changing the location, orientation, or starting time of the experiment as a whole should leave the laws of mechanics governing it unchanged.
+            From inertial frames and Galileo’s relativity to the principle of least action: deriving the Euler–Lagrange equation, the free-particle Lagrangian and Newton’s three laws.
           </div>
         </a>
 
@@ -266,6 +305,7 @@
         </div>
       </article>
     </div>
+
 
 
               </div>

@@ -365,3 +365,72 @@ li.is-read::after {
 /* The formula a link points to (e.g. a cross-article \eqref) is briefly highlighted. */
 .katex-block:target { animation: eq-target 2.4s ease-out; border-radius: 6px; }
 @keyframes eq-target { from { background: rgba(48, 169, 222, .22); } to { background: transparent; } }
+
+/* Planned series under a collection (site.config.mjs: series.<collection>.planned). */
+.home-planned {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .3rem .6rem;
+  margin-top: .7rem;
+  padding-top: .6rem;
+  border-top: 1px dashed rgba(127, 127, 127, .3);
+  font-size: .9rem;
+  color: var(--sec-text-color);
+}
+.home-planned-label { font-weight: 700; }
+.home-planned-list { display: contents; list-style: none; margin: 0; padding: 0; }
+.home-planned-list li { opacity: .75; }
+.home-planned-list li:not(:last-child)::after { content: " ·"; }
+/* "All articles" link under the latest-articles list. */
+.home-all-link { display: block; text-align: right; margin: .2rem .5rem 1rem; font-size: .95rem; }
+
+/* "Start here" block on the home page (src/components/HomeIntro.astro). */
+.home-intro {
+  margin: .2rem 0 1.6rem;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  background: rgba(74, 127, 181, .08);
+  border: 1px solid rgba(74, 127, 181, .25);
+}
+.home-intro-text { font-size: 1.05rem; margin: 0 0 .4rem; color: var(--text-color); line-height: 1.8; }
+.home-intro-pre { font-size: .9rem; margin: 0 0 .8rem; color: var(--sec-text-color); }
+.home-intro-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+.home-intro-btn {
+  display: inline-block;
+  padding: .35rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #4a7fb5;
+  color: #4a7fb5;
+  font-size: .95rem;
+}
+.home-intro-btn:hover { background: rgba(74, 127, 181, .12); color: #4a7fb5; text-decoration: none; }
+.home-intro-btn--primary { background: #4a7fb5; color: #fff; }
+.home-intro-btn--primary:hover { background: #3d6c9b; color: #fff; }
+/* Random epigraph in the home "start here" block. */
+.home-quote { margin: 0 0 .9rem; }
+.home-quote-text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--text-color);
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+.home-quote-text p { margin: 0; }
+.home-quote-source {
+  margin-top: .35rem;
+  text-align: right;
+  font-size: .88rem;
+  color: var(--sec-text-color);
+}
+.home-quote-link {
+  margin-left: .6rem;
+  padding: .05rem .5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(74, 127, 181, .45);
+  color: #4a7fb5;
+  font-size: .8rem;
+  white-space: nowrap;
+}
+.home-quote-link:hover { background: rgba(74, 127, 181, .12); color: #4a7fb5; text-decoration: none; }
