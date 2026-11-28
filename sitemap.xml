@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.l-l.me.uk/mechanics-03.3/</loc>
-    <lastmod>2026-11-27T22:16:49.942Z</lastmod>
+    <lastmod>2026-11-27T23:26:27.286Z</lastmod>
   </url>
   <url>
     <loc>https://blog.l-l.me.uk/mechanics-03.2/</loc>
-    <lastmod>2026-11-27T22:16:49.940Z</lastmod>
+    <lastmod>2026-11-27T23:05:29.721Z</lastmod>
   </url>
   <url>
     <loc>https://blog.l-l.me.uk/cmvn274n300070s7yb3d29f42/</loc>
-    <lastmod>2026-11-27T22:16:49.939Z</lastmod>
+    <lastmod>2026-11-27T23:01:50.559Z</lastmod>
   </url>
   <url>
     <loc>https://blog.l-l.me.uk/cmvn274n100030s7y9nxn48bl/</loc>
-    <lastmod>2026-11-27T22:16:49.937Z</lastmod>
+    <lastmod>2026-11-27T22:37:19.692Z</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://blog.l-l.me.uk/cmvn274n100030s7y9nxn48bl/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.l-l.me.uk/en/mechanics-02/"/>
   </url>
   <url>
     <loc>https://blog.l-l.me.uk/cmvn274mz00020s7y8cnm1r5c/</loc>
-    <lastmod>2026-11-27T22:16:49.935Z</lastmod>
+    <lastmod>2026-11-27T22:37:19.690Z</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://blog.l-l.me.uk/cmvn274mz00020s7y8cnm1r5c/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.l-l.me.uk/en/mechanics-01/"/>
   </url>
@@ -58,6 +58,12 @@
     <loc>https://blog.l-l.me.uk/archives/2026/07/</loc>
   </url>
   <url>
+    <loc>https://blog.l-l.me.uk/archives/2026/08/</loc>
+  </url>
+  <url>
+    <loc>https://blog.l-l.me.uk/archives/2026/09/</loc>
+  </url>
+  <url>
     <loc>https://blog.l-l.me.uk/categories/%E7%89%A9%E7%90%86/</loc>
   </url>
   <url>
@@ -65,13 +71,13 @@
   </url>
   <url>
     <loc>https://blog.l-l.me.uk/en/mechanics-02/</loc>
-    <lastmod>2026-11-27T22:16:49.938Z</lastmod>
+    <lastmod>2026-11-27T22:37:19.691Z</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://blog.l-l.me.uk/cmvn274n100030s7y9nxn48bl/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.l-l.me.uk/en/mechanics-02/"/>
   </url>
   <url>
     <loc>https://blog.l-l.me.uk/en/mechanics-01/</loc>
-    <lastmod>2026-11-27T22:16:49.936Z</lastmod>
+    <lastmod>2026-11-27T22:37:19.689Z</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://blog.l-l.me.uk/cmvn274mz00020s7y8cnm1r5c/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.l-l.me.uk/en/mechanics-01/"/>
   </url>
